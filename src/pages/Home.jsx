@@ -34,16 +34,11 @@ export function Home() {
         <p>O objetivo que almejamos alcançar com o nosso produto é que o mesmo atinja toda população Brasileira, principalmente para aqueles que não tem condições financeiras, tratamos exclusivamente da água pluvial nesse produto com o intuito de reutilizar uma água já disponível para todos. Nosso diferencial é a utilização da tecnologia, a automatização para auxiliar na administração do produto em conjunto com um aplicativo.</p>
       </div>
 
-      <div>
-        
-        
         <a href="/Tutorial" onCLick={(e) => handleNavegation(e,'/Tutorial')}>Tutorial</a>
         <a href="/Componentes" onCLick={(e) => handleNavegation(e,'/Componentes')}>Componentes</a>
         <a href="/Sobrenos" onCLick={(e) => handleNavegation(e,'/Sobrenos')}>Sobre nós</a>
         <a href="/Referencias" onCLick={(e) => handleNavegation(e,'/Referencias')}>Referências</a>
         <a href="/Contatenos" onCLick={(e) => handleNavegation(e,'/Contatenos')}>Contate-nos</a>
-
-      </div>
 
       <div class="container_redes">
         <div class="redes_img">
