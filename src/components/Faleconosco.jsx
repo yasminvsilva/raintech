@@ -1,6 +1,10 @@
+import { FaleconoscoContainer } from "../pages/Home.styles"
+import  Header from "../pages/Header"
+
 export function Faleconosco() {
     return (
-      <div>Faleconosco</div>
-    )
-  }
-  
+    <FaleconoscoContainer>
+      <Header></Header>
+    </FaleconoscoContainer>
+   )
+ }

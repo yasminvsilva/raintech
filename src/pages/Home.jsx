@@ -28,17 +28,19 @@ export function Home() {
           <img src={iconStorm} alt="ícone de previsão de tempestade" />
         </div>
         <p>Nosso produto é a solução para quem busca água limpa para utilizar em tarefas domiciliar. Nosso filtro de água de última geração utiliza tecnologia de ponta para remover impurezas e micro-organismos, garantindo água tratada.</p>
-        <p><strong>Benefícios:</strong> </p>
-        <p><strong>Economia e Sustentabilidade:</strong> Economiza e reduz o preço da sua conta. </p>
-        <p><strong>Fácil Instalação:</strong> Design prático que se adapta em qualquer residência. </p>
-        <p>O objetivo que almejamos alcançar com o nosso produto é que o mesmo atinja toda população Brasileira, principalmente para aqueles que não tem condições financeiras, tratamos exclusivamente da água pluvial nesse produto com o intuito de reutilizar uma água já disponível para todos. Nosso diferencial é a utilização da tecnologia, a automatização para auxiliar na administração do produto em conjunto com um aplicativo.</p>
+        <p class="t_benef"><strong>Benefícios da RainTech:</strong> </p>
+        <p class="p_benef"><strong>Economia e Sustentabilidade:</strong> Economiza e reduz o preço da sua conta. </p>
+        <p class="p_benef"><strong>Fácil Instalação:</strong> Design prático que se adapta em qualquer residência. </p>
+        <p class="obj">O objetivo que almejamos alcançar com o nosso produto é que o mesmo atinja toda população Brasileira, principalmente para aqueles que não tem condições financeiras, tratamos exclusivamente da água pluvial nesse produto com o intuito de reutilizar uma água já disponível para todos. Nosso diferencial é a utilização da tecnologia, a automatização para auxiliar na administração do produto em conjunto com um aplicativo.</p>
       </div>
 
-        <a href="/Tutorial" onCLick={(e) => handleNavegation(e,'/Tutorial')}>Tutorial</a>
-        <a href="/Componentes" onCLick={(e) => handleNavegation(e,'/Componentes')}>Componentes</a>
-        <a href="/Sobrenos" onCLick={(e) => handleNavegation(e,'/Sobrenos')}>Sobre nós</a>
-        <a href="/Referencias" onCLick={(e) => handleNavegation(e,'/Referencias')}>Referências</a>
-        <a href="/Contatenos" onCLick={(e) => handleNavegation(e,'/Contatenos')}>Contate-nos</a>
+      
+        <div class="b1"><a href="/Tutorial" onCLick={(e) => handleNavegation(e,'/Tutorial')}>Tutorial</a></div>
+        <div class="b2"><a href="/Componentes" onCLick={(e) => handleNavegation(e,'/Componentes')}>Componentes</a></div>
+        <div class="b3"><a href="/Sobrenos" onCLick={(e) => handleNavegation(e,'/Sobrenos')}>Sobre nós</a></div>
+        <div class="b4"><a href="/Referencias" onCLick={(e) => handleNavegation(e,'/Referencias')}>Referências</a></div>
+        <div class="b5"><a href="/Contatenos" onCLick={(e) => handleNavegation(e,'/Contatenos')}>Contate-nos</a></div>
+      
 
       <div class="container_redes">
         <div class="redes_img">

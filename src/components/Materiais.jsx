@@ -1,6 +1,10 @@
+import { MateriaisContainer } from "../pages/Home.styles"
+import  Header from "../pages/Header"
+
 export function Materiais() {
     return (
-      <div>Materiais</div>
-    )
-  }
-  
+    <MateriaisContainer>
+      <Header></Header>
+    </MateriaisContainer>
+   )
+ }

@@ -1,5 +1,10 @@
+import { ManualContainer } from "../pages/Home.styles"
+import  Header from "../pages/Header"
+
 export function Manual() {
     return (
-    <div>Manual</div>
+    <ManualContainer>
+      <Header></Header>
+    </ManualContainer>
    )
  }
