@@ -1,33 +1,5 @@
 import styled from "styled-components"
 
-export const HeaderContainer = styled.div `
-
-header {
-    position: relative;
-    width: 100%;
-    height: 60px; /* Ajuste a altura do cabeçalho conforme necessário */
-}
-
-header img {
-    position: absolute;
-    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.esquerda {
-    top: 50%;
-    left: 15px; /* Ajuste a distância do ícone da borda esquerda */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-}
-
-.direita {
-    top: 50%;
-    right: 15px; /* Ajuste a distância do ícone da borda direita */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-}
-   
-`
-
 export const HomeContainer = styled.div `
     
     main {
@@ -139,25 +111,36 @@ export const HomeContainer = styled.div `
 
     }
 `
+export const HeaderContainer = styled.div `
+header {
+    position: relative;
+    width: 100%;
+    height: 60px; /* Ajuste a altura do cabeçalho conforme necessário */
+}
+
+header img {
+    position: absolute;
+    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.esquerda {
+    top: 50%;
+    left: 15px; /* Ajuste a distância do ícone da borda esquerda */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+.direita {
+    top: 50%;
+    right: 15px; /* Ajuste a distância do ícone da borda direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+`
 
 export const ManualContainer = styled.div `
 `
 
-export const ComponentsContainer = styled.div `
-    h1 {
-        font-size: 4rem;
-        color: ${props => props.theme.textColor};
-        text-align: center;
-        margin-top: 3.25rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        color: ${props => props.theme.subtextColor};
-        text-align: center;
-        margin-bottom: 5rem;
-        opacity: 0.7
-    }
+export const MateriaisContainer = styled.div `
 `
 
 export const AgenteContainer = styled.div `

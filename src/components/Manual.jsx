@@ -5,6 +5,7 @@ export function Manual() {
     return (
     <ManualContainer>
       <Header></Header>
+      <h1>a</h1>
     </ManualContainer>
    )
  }
