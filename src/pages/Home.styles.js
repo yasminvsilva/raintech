@@ -5,9 +5,9 @@ export const HomeContainer = styled.div `
     main {
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: center; /* Centraliza a imagem */
+        background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 226vh; /* Define a altura do body como 100% da viewport */
+        height: 260vh; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -89,8 +89,10 @@ export const HomeContainer = styled.div `
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-color: ${props => props.theme.containerRedes
-        }; 
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover; 
 
         img {
             width: 3rem;
@@ -136,15 +138,36 @@ header img {
     transform: translateY(-50%); /* Centraliza verticalmente */
 }
 `
-
 export const ManualContainer = styled.div `
 
+main {
+        background-image: url('../src/assets/fundomobilepng.png');
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        background-position: top; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        height: 260vh; /* Define a altura do body como 100% da viewport */
+        margin: 0;
+        padding: 0;
+    }
+
     h1 {
-        font-size: 4rem;
+        font-size: 3.75rem;
         color: ${props => props.theme.textColor};
         text-align: center;
         margin-top: 3.25rem;
     }
+
+    .container_v {
+            width: 30rem;
+            margin: 0 auto;
+        }
+
+    iframe {
+        width: 30rem;
+        height: 20rem;
+        border: none;
+        margin-bottom: 1.5rem;
+        }
 
     h2 {
         font-size: 1.5rem;
@@ -154,20 +177,15 @@ export const ManualContainer = styled.div `
         opacity: 0.7
     }
 
-
-    .direita {
-        top: 50%;
-        right: -50px; /* Ajuste a distância do ícone da borda direita */
-        transform: translateY(-50%); /* Centraliza verticalmente */
-    }
-
     .container_redes {
         width: 100%;             /* Largura máxima do container */
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-color: ${props => props.theme.containerRedes
-        }; 
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
 
         img {
             width: 3rem;
@@ -190,8 +208,17 @@ export const ManualContainer = styled.div `
 }}
 
 `
-
 export const MateriaisContainer = styled.div `
+
+main {
+        background-image: url('../src/assets/fundomobilepng.png');
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        background-position: top; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        height: 260vh; /* Define a altura do body como 100% da viewport */
+        margin: 0;
+        padding: 0;
+    }
 
     h1 {
         font-size: 4rem;
@@ -214,8 +241,10 @@ export const MateriaisContainer = styled.div `
         margin-top: 4rem;
         margin-bottom: -15rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-color: ${props => props.theme.containerRedes
-        }; 
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover; 
 
         img {
             width: 3rem;
@@ -238,8 +267,20 @@ export const MateriaisContainer = styled.div `
 }}
 
 `
-
 export const AgenteContainer = styled.div `
+
+    main {
+
+        width: 100%;
+        height: 920px;
+        background-image: url('../src/assets/fundomobilepng.png');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+    }
+
     h1 {
         font-size: 4rem;
         color: ${props => props.theme.textColor};
@@ -251,18 +292,39 @@ export const AgenteContainer = styled.div `
         font-size: 1.5rem;
         color: ${props => props.theme.subtextColor};
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         opacity: 0.7
     }
 
+   img {
+        width: 3rem;
+        margin-top: 0;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+   }
+
+    p {
+        margin-top: 2rem;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        justify-content: center;
+        text-align: justify;
+    }
+
     .container_redes {
-        width: 100%;             /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%;       
+        margin: 0 auto;   
         margin-top: 4rem;
         margin-bottom: -1.6rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-color: ${props => props.theme.containerRedes
-        }; 
+        padding: 3.125rem;           
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
 
         img {
             width: 3rem;
@@ -278,14 +340,27 @@ export const AgenteContainer = styled.div `
         }
 
     .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;               
+        justify-content: center;     
         gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+        margin-bottom: 1.5rem;  
+        margin-right: 9.2rem;      
+        margin-left: 9.2rem;         
 }}
     
 `
 export const LinksContainer = styled.div `
+
+    main {
+        background-image: url('../src/assets/fundomobilepng.png');
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        background-position: top; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        height: 130vh; /* Define a altura do body como 100% da viewport */
+        margin: 0;
+        padding: 0;
+    }
+
     h1 {
         font-size: 4rem;
         color: ${props => props.theme.textColor};
@@ -308,8 +383,10 @@ export const LinksContainer = styled.div `
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-color: ${props => props.theme.containerRedes
-        }; 
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover; 
 
         img {
             width: 3rem;
@@ -334,6 +411,17 @@ export const LinksContainer = styled.div `
     
 `
 export const FaleconoscoContainer = styled.div `
+
+    main {
+        background-image: url('../src/assets/fundomobilepng.png');
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        height: 260vh; /* Define a altura do body como 100% da viewport */
+        margin: 0;
+        padding: 0;
+    }
+
     h1 {
         font-size: 4rem;
         color: ${props => props.theme.textColor};
@@ -342,13 +430,15 @@ export const FaleconoscoContainer = styled.div `
     }
 
     .container_redes {
-        width: 163.5%;             /* Largura máxima do container */
+        width: 100%;             /* Largura máxima do container */
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
-        margin-bottom: -13rem;
+        margin-bottom: -2rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-color: ${props => props.theme.containerRedes
-        }; 
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover; 
 
         img {
             width: 3rem;
@@ -368,6 +458,7 @@ export const FaleconoscoContainer = styled.div `
         justify-content: center;     /* Centraliza as imagens horizontalmente */
         gap: 20px;
         margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
-}}
+    }
+}
 
 `
