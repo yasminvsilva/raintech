@@ -138,23 +138,236 @@ header img {
 `
 
 export const ManualContainer = styled.div `
+
+    h1 {
+        font-size: 4rem;
+        color: ${props => props.theme.textColor};
+        text-align: center;
+        margin-top: 3.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: ${props => props.theme.subtextColor};
+        text-align: center;
+        margin-bottom: 5rem;
+        opacity: 0.7
+    }
+
+
+    .direita {
+        top: 50%;
+        right: -50px; /* Ajuste a distância do ícone da borda direita */
+        transform: translateY(-50%); /* Centraliza verticalmente */
+    }
+
+    .container_redes {
+        width: 100%;             /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-color: ${props => props.theme.containerRedes
+        }; 
+
+        img {
+            width: 3rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+            margin-top: -1rem;
+            font-size: 1.6rem;
+        }
+
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+
 `
 
 export const MateriaisContainer = styled.div `
+
+    h1 {
+        font-size: 4rem;
+        color: ${props => props.theme.textColor};
+        text-align: center;
+        margin-top: 3.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: ${props => props.theme.subtextColor};
+        text-align: center;
+        margin-bottom: 5rem;
+        opacity: 0.7
+    }
+
+    .container_redes {
+        width: 100%;             /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        margin-bottom: -15rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-color: ${props => props.theme.containerRedes
+        }; 
+
+        img {
+            width: 3rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+            margin-top: -1rem;
+            font-size: 1.6rem;
+        }
+
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+
 `
 
 export const AgenteContainer = styled.div `
-    header {
-        
+    h1 {
+        font-size: 4rem;
+        color: ${props => props.theme.textColor};
+        text-align: center;
+        margin-top: 3.25rem;
     }
+
+    h2 {
+        font-size: 1.5rem;
+        color: ${props => props.theme.subtextColor};
+        text-align: center;
+        margin-bottom: 5rem;
+        opacity: 0.7
+    }
+
+    .container_redes {
+        width: 100%;             /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        margin-bottom: -1.6rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-color: ${props => props.theme.containerRedes
+        }; 
+
+        img {
+            width: 3rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+            margin-top: -1rem;
+            font-size: 1.6rem;
+        }
+
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+    
 `
 export const LinksContainer = styled.div `
-    header {
-        
+    h1 {
+        font-size: 4rem;
+        color: ${props => props.theme.textColor};
+        text-align: center;
+        margin-top: 3.25rem;
     }
+
+    p {
+        font-size: 1.25rem;
+        color: ${props => props.theme.textColor};
+        text-align: justify;
+        margin-top: 3.25rem; 
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .container_redes {
+        width: 100%;               /* Largura do container */
+        max-width: 1000px;        /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-color: ${props => props.theme.containerRedes
+        }; 
+
+        img {
+            width: 3rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+            margin-top: -1rem;
+            font-size: 1.6rem;
+        }
+
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+
+    
 `
 export const FaleconoscoContainer = styled.div `
-    header {
-        
+    h1 {
+        font-size: 4rem;
+        color: ${props => props.theme.textColor};
+        text-align: center;
+        margin-top: 3.25rem;
     }
+
+    .container_redes {
+        width: 163.5%;             /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        margin-bottom: -13rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-color: ${props => props.theme.containerRedes
+        }; 
+
+        img {
+            width: 3rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+            margin-top: -1rem;
+            font-size: 1.6rem;
+        }
+
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+
 `
