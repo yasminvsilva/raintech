@@ -1,6 +1,7 @@
 import iconInstagram from "../assets/instagram.svg"
 import iconGithub from "../assets/github.svg"
 import iconTwitter from "../assets/twitter.svg"
+import videoTutorial from "../assets/RainTech.mp4"
 
 import { ManualContainer } from "../pages/Home.styles"
 import  Header from "../pages/Header"
@@ -16,8 +17,8 @@ export function Manual() {
             <h2>Confira agora nosso vídeo explicando o <br /> funcionamento do produto e como <br /> utilizá-lo</h2>
           </div>
 
-          <div className="container_v">
-          <iframe width="280" height="155" src="https://www.youtube.com/embed/LKsgDcckur0?si=t3jVV8LafF9TG3AH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="videozinho">
+          <video src={videoTutorial} type="video/mp4" controls autoPlay height={200} width={300}></video>
           </div>
 
           <div className="container_redes">

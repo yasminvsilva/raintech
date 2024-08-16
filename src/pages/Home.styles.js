@@ -145,7 +145,7 @@ main {
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 260vh; /* Define a altura do body como 100% da viewport */
+        height: 160vh; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -157,24 +157,24 @@ main {
         margin-top: 3.25rem;
     }
 
-    .container_v {
-            width: 30rem;
-            margin: 0 auto;
-        }
-
-    iframe {
-        width: 30rem;
-        height: 20rem;
-        border: none;
-        margin-bottom: 1.5rem;
-        }
-
     h2 {
         font-size: 1.5rem;
         color: ${props => props.theme.subtextColor};
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 0.85rem;
         opacity: 0.7
+    }
+
+    .videozinho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    video {
+     max-width: 100%;
+     height: auto;
     }
 
     .container_redes {
@@ -200,12 +200,14 @@ main {
             font-size: 1.6rem;
         }
 
-    .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
-        gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
-}}
+        .redes_img {
+            display: flex;               /* Define como flexbox */
+            justify-content: center;     /* Centraliza as imagens horizontalmente */
+            gap: 20px;
+            margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+        }
+
+}
 
 `
 export const MateriaisContainer = styled.div `
