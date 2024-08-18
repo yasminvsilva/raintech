@@ -15,12 +15,20 @@ export function Faleconosco() {
             <h1>Contate-nos</h1>
           </div>
 
-          <div>
-            <a href="">Enviar</a>
-            <p>teste</p>
-          </div>
+          <form action="/enviar-feedback" method="POSt">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required></input> 
 
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required></input>
 
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" placeholder="Sua mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+
+         
           <div className="container_redes">
             <div className="redes_img">
               <img src={iconInstagram} alt="" />

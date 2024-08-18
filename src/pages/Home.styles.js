@@ -145,7 +145,7 @@ main {
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 160vh; /* Define a altura do body como 100% da viewport */
+        height: 100vh; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -170,12 +170,27 @@ main {
         justify-content: center;
         align-items: center;
         height: 50vh;
+        position: relative;
+        
     }
 
     video {
      max-width: 100%;
      height: auto;
+     position: relative;
+     
+     border-radius: 1rem;
     }
+
+    .grid-btn {
+        margin-top: 12rem;
+        position: absolute;
+        align-items: center;
+        align-content: center;
+        height: 3rem;
+        width: 12rem;
+        font-size: 1rem;
+    } 
 
     .container_redes {
         width: 100%;             /* Largura máxima do container */
@@ -205,8 +220,7 @@ main {
             justify-content: center;     /* Centraliza as imagens horizontalmente */
             gap: 20px;
             margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
-        }
-
+        }   
 }
 
 `
@@ -235,6 +249,22 @@ main {
         text-align: center;
         margin-bottom: 5rem;
         opacity: 0.7
+    }
+
+    .componentes {
+        
+        width: 40%;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        margin-bottom: -15rem;
+        padding: 3.125rem;
+        background-color: ${props => props.theme.containerRedes};
+
+
+        img {
+            margin: 1rem;
+            width: 14rem;
+            height: 14rem;
+            justify-content: center;}
     }
 
     .container_redes {
@@ -274,7 +304,7 @@ export const AgenteContainer = styled.div `
     main {
 
         width: 100%;
-        height: 920px;
+        height: 1920px;
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover;
         background-position: top;
