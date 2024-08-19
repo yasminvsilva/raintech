@@ -13,6 +13,7 @@ import iconMaterial8 from "../assets/jumpers.svg"
 import iconMaterial9 from "../assets/led.svg"
 import iconMaterial10 from "../assets/protoboard.svg"
 import iconMaterial11 from "../assets/servomotor.svg"
+import iconMaterial12 from "../assets/bateria.svg"
 
 import { MateriaisContainer } from "../pages/Home.styles"
 import  Header from "../pages/Header"
@@ -28,7 +29,8 @@ export function Materiais() {
             <h2>Confira os componentes utilizados nesse produto e suas funções.</h2>
           </div>
 
-          <div class="1">
+        <div class="todosOsComponentes">
+          <div class="c1">
             <div class="componentes"><img src={iconMaterial1} alt="" />
             <h2>Módulo Relé 1 Canal 5V</h2>
             <p> O Módulo Relé permite que componentes que não usam o arduino para serem ligados o utilizem.</p>
@@ -93,7 +95,14 @@ export function Materiais() {
             <h2>Micro Servo 9g SG90</h2>
             <p>O Micro Servo é utilizado para movimentar um objeto, permitindo-o girar em ângulos ou distâncias específicas</p>
             </div>
+
+
+            <div class="componentesClaros"><img src={iconMaterial12} alt="" />
+            <h2>Bateria Recarregável</h2>
+            <p>A Bateria Recarregável deixará os equipamentos que necessitam dela, ligados.</p>
+            </div>
           </div>
+        </div>
 
           <div className="container_redes">
             <div className="redes_img">

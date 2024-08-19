@@ -9,10 +9,10 @@ export const HomeContainer = styled.div `
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 250vh; /* Define a altura do body como 100% da viewport */
+        height: fit-content; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
-        max-height: 110rem;
+        max-height: 150rem;
 
         
     }
@@ -67,7 +67,34 @@ export const HomeContainer = styled.div `
     }
 
 
+    @media (min-width: 500px) {
+        main{
+        height: fit-content;
+       }
+
+       .b1, .b2, .b3, .b4, .b5 {
+            background-color: ${props => props.theme.buttonColor};
+            color: ${props => props.theme.textColor};
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 62rem;
+            height: 7rem;
+            padding: 2rem 1rem; /* Aumenta o tamanho do botão */
+            font-size: 4rem; /* Aumenta o tamanho do texto */
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            margin-inline: auto;
+            
+        }
+       
+    }
+
     @media (min-width: 800px) {
+       main{
+        height: 270vh;
+       }
+       
         h1 {
             font-size: 7rem;
         }
@@ -97,10 +124,39 @@ export const HomeContainer = styled.div `
             font-size: 5rem; /* Aumenta o tamanho do texto */
             border-radius: 1rem;
             margin-bottom: 2rem;
+            margin-inline: auto;
             
+
         }
+
+        .videozinho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        position: relative;
+        
     }
-    
+
+    video {
+     max-width: 100%;
+     height: auto;
+     position: relative;
+     height: 300rem;
+     border-radius: 1rem;
+    }
+    }
+
+    .b1, .b2, .b3, .b4, .b5 {
+        background-color: ${props => props.theme.buttonColor};
+        color: ${props => props.theme.textColor};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        margin-inline: auto;
+    }
 
     
 
@@ -207,8 +263,7 @@ main {
      max-width: 100%;
      height: auto;
      position: relative;
-    max-height: 300rem;
-     border-radius: 1rem;
+     max-height: 300rem;
     }
 
     .grid-btn {
@@ -252,15 +307,105 @@ main {
         }   
 }
 
+
+@media (min-width: 500px) {
+       main{
+        height: fit-content;
+       }
+    
+       video{
+        width: 40rem;
+        height: 30rem;
+       } 
+
+       .grid-btn {
+        margin-top: 26rem;
+        position: absolute;
+        align-items: center;
+        align-content: center;
+        height: 10rem;
+        width: 12rem;
+        font-size: 1rem;
+    } 
+
+    .container_redes {
+       margin-top: 10rem;
+    }}
+
+@media (min-width: 800px) {
+       main{
+        height: 100vh;
+       }
+       
+        h1 {
+            font-size: 6rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+
+       video{
+        width: 60rem;
+        height: 35rem;
+       } 
+
+       .grid-btn {
+        margin-top: 30rem;
+        position: absolute;
+        align-items: center;
+        align-content: center;
+        height: 14rem;
+        width: 12rem;
+        font-size: 1rem;}
+    }
+
+    
+
 `
 export const MateriaisContainer = styled.div `
+
+@media (min-width: 800px) {
+
+        .c1 {
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Ajuste conforme necessário */
+        grid-template-rows: repeat(4); /* Ajuste conforme necessário */
+        gap: 10px; /* Espaçamento entre as imagens */
+        padding: 40px; /* Adiciona preenchimento ao container */
+        box-sizing: border-box;
+        margin-inline: auto;
+        justify-content: center;
+            }
+
+       
+    }
+
+    @media (min-width: 500px) {
+
+    .c1 {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ajuste conforme necessário */
+    grid-template-rows: repeat(4); /* Ajuste conforme necessário */
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 40px; /* Adiciona preenchimento ao container */
+    box-sizing: border-box;
+    margin-inline: auto;
+    justify-content: center;
+        }
+
+
+}
 
 main {
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 600vh; /* Define a altura do body como 100% da viewport */
+        height: fit-content; /* Define a altura do body como 100% da viewport */
+        max-height: fit-content;
         margin: 0;
         padding: 0;
     }
@@ -280,21 +425,24 @@ main {
         opacity: 0.7
     }
 
-    .componentes {
 
+    .componentes{
         margin: 0 auto;
-        width: 50%;     
+        width: 20rem;     
         margin-top: 4rem;
         margin-bottom: 4rem;
         padding: 3.125rem;
         background-color: ${props => props.theme.containerComponentes};
         border-radius: 1.5rem;
-        
+       
+
 
         img {
             width: 14rem;
             height: 14rem;
             justify-items: center;
+            margin-inline:auto;
+            justify-content: center;
         }
 
         p {
@@ -311,14 +459,14 @@ main {
         }
     }
 
-    .componentesClaros {
+    .componentesClaros{
 
         margin: 0 auto;
-        width: 50%;     
+        width: 20rem;     
         margin-top: 4rem;
         margin-bottom: 4rem;
         padding: 3.125rem;
-        background-color: ${props => props.theme.containerComponentesClaros};
+        background-color: ${props => props.theme.containerComponentes};
         border-radius: 1.5rem;
 
 
