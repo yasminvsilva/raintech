@@ -68,50 +68,31 @@ export const HomeContainer = styled.div `
 
 
     @media (min-width: 800px) {
-        main{
-        height: fit-content;
-       }
-
-       .b1, .b2, .b3, .b4, .b5 {
-            background-color: ${props => props.theme.buttonColor};
-            color: ${props => props.theme.textColor};
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 62rem;
-            height: 7rem;
-            padding: 2rem 1rem; 
-            font-size: 4rem; 
-            border-radius: 1rem;
-            margin-bottom: 2rem;
-            margin-inline: auto;
-            
+        main {
+            height: 250vh;
         }
-       
-    }
 
-    @media (min-width: 800px) {
-       main{
-        height: 270vh;
-       }
-       
         h1 {
             font-size: 7rem;
         }
-        
+
         h2 {
             font-size: 3rem;
-
         }
+
         .container {
-            display: contents;
+            display: contents;  
+        }
+
+        .container img {
+            display: contents;  
         }
 
         .container p {
             font-size: 2rem;
             margin: 5rem;
         }
-
+        
         .b1, .b2, .b3, .b4, .b5 {
             background-color: ${props => props.theme.buttonColor};
             color: ${props => props.theme.textColor};
@@ -125,63 +106,46 @@ export const HomeContainer = styled.div `
             border-radius: 1rem;
             margin-bottom: 2rem;
             margin-inline: auto;
-            
 
         }
+        
+        .imagesContainer {
+            display: flex;               
+            justify-content: center;     
+            gap: 35px; 
+            margin-bottom: 2.5rem;
+            height: 5.5rem;
+        }
 
-    }
-    
+        .container_redes {
+            width: 100%;              
+            max-width: 10000px;       
+            margin: 0 auto;           
+            margin-top: 4rem;
+            padding: 3.125rem;          
+            background-image: url('../src/assets/fundoredes.png');
+            background-color: ${props => props.theme.containerRedes};
+            background-repeat: no-repeat;
+            background-size: cover;
 
-    .b1, .b2, .b3, .b4, .b5 {
-        background-color: ${props => props.theme.buttonColor};
-        color: ${props => props.theme.textColor};
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        margin-inline: auto;
-    }
-
-    
-
-    .imagesContainer {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
-        gap: 35px; 
-        margin-bottom: 2.5rem;
-        height: 5.5rem;
-    }
-
-    .container_redes {
-        width: 100%;               /* Largura do container */
-        max-width: 10000px;        /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
-        margin-top: 4rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
-        background-color: ${props => props.theme.containerRedes};
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        img {
+            img {
             width: 3rem;
             height: auto;
-        }
+            }
 
-        p {
+            p {
             color: ${props => props.theme.textColor};
             text-align: center;
+            }
+
+        .redes_img {
+            display: flex;               
+            justify-content: center;     
+            gap: 20px;
+            margin-bottom: 1.5rem;                   
         }
-
-    .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
-        gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
-}
-
     }
+}
 `
 export const HeaderContainer = styled.div `
 header {
@@ -278,10 +242,10 @@ export const ManualContainer = styled.div `
 
 main {
         background-image: url('../src/assets/fundomobilepng.png');
-        background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: top; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 100vh; /* Define a altura do body como 100% da viewport */
+        background-size: cover; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: 100vh; 
         margin: 0;
         padding: 0;
     }
@@ -328,10 +292,10 @@ main {
     } 
 
     .container_redes {
-        width: 100%;             /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%;             
+        margin: 0 auto;           
         margin-top: 4rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
+        padding: 3.125rem;          
         background-image: url('../src/assets/fundoredes.png');
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
@@ -351,16 +315,51 @@ main {
         }
 
         .redes_img {
-            display: flex;               /* Define como flexbox */
-            justify-content: center;     /* Centraliza as imagens horizontalmente */
+            display: flex;               
+            justify-content: center;     
             gap: 20px;
-            margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+            margin-bottom: 1.5rem;                   
         }   
 }
 
 
 @media (min-width: 800px) {
-    
+    main {
+        height: 130vh;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .videozinho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        position: relative;
+        
+    }
+
+    video {
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .grid-btn {
+        margin-top: 15rem;
+        position: absolute;
+        align-items: center;
+        align-content: center;
+        height: 3rem;
+        width: 12rem;
+        font-size: 1rem;
+    } 
+
 }
 
     
@@ -369,45 +368,41 @@ main {
 export const MateriaisContainer = styled.div `
 
 @media (min-width: 800px) {
-
-        .c1 {
-        
+    .c1 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Ajuste conforme necessário */
-        grid-template-rows: repeat(4); /* Ajuste conforme necessário */
-        gap: 10px; /* Espaçamento entre as imagens */
-        padding: 40px; /* Adiciona preenchimento ao container */
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(4); 
+        gap: 10px; 
+        padding: 40px; 
         box-sizing: border-box;
         margin-inline: auto;
         justify-content: center;
-            }
+        }
 
        
     }
 
     @media (min-width: 500px) {
-
     .c1 {
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ajuste conforme necessário */
-    grid-template-rows: repeat(4); /* Ajuste conforme necessário */
-    gap: 10px; /* Espaçamento entre as imagens */
-    padding: 40px; /* Adiciona preenchimento ao container */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4); 
+    gap: 10px; 
+    padding: 40px; 
     box-sizing: border-box;
     margin-inline: auto;
     justify-content: center;
-        }
+    }
 
 
 }
 
 main {
         background-image: url('../src/assets/fundomobilepng.png');
-        background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: top; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: fit-content; /* Define a altura do body como 100% da viewport */
+        background-size: cover; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: fit-content; 
         max-height: fit-content;
         margin: 0;
         padding: 0;

@@ -4,6 +4,8 @@ import iconTwitter from "../assets/twitter.svg"
 import gotas from "../assets/gotas.svg"
 import lilian from "../assets/lilian2.jpeg"
 import duda from "../assets/duda2.jpeg"
+import renata from "../assets/renata2.jpeg"
+
 
 
 import { AgenteContainer } from "../pages/Home.styles"
@@ -45,7 +47,7 @@ export function Agente() {
             </div>
 
             <div className="nos">
-              <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
+              <img src={renata} alt="" />
               <h5 clasName="nome_r">Renata Costa</h5>
               <h6 clasName="textinho">renascimento2106@gmail.com</h6>
             </div>

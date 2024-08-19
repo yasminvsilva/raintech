@@ -22,7 +22,7 @@ export function Home() {
           </div>
 
           <div className="container">
-            <div className="imagesContainer" >
+            <div className="" >
               <img src={iconCloudy} alt="ícone de previsão nublada" />
               <img src={iconRain} alt="ícone de um previsão de chuva" />
               <img src={iconStorm} alt="ícone de previsão de tempestade" />
