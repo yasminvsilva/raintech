@@ -31,21 +31,21 @@ export function Agente() {
           <div className="descricao">
             <div className="nos">
               <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
-              <p clasName="nome"> <strong>Lilian Correia</strong></p>
+              <h6 clasName="nome"> Lilian Correia</h6>
               <p clasName="textinho">Estudante do 3º ano do Ensino Médio 
               Email: megobira@gmail.com</p>
             </div>
 
             <div className="nos">
               <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
-              <p clasName="nome"><strong>Maria Eduarda Gobira</strong></p>
+              <h6 clasName="nome">Maria Eduarda <br /> Gobira</h6>
               <p clasName="textinho">Estudante do 3º ano do Ensino Médio 
               Email: megobira@gmail.com</p>
             </div>
 
             <div className="nos">
               <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
-              <p clasName="nome"><strong>Renata Costa</strong></p>
+              <h6 clasName="nome">Renata Costa</h6>
               <p clasName="textinho">Estudante do 3º ano do Ensino Médio 
               Email: megobira@gmail.com</p>
             </div>

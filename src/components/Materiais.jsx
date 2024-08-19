@@ -28,70 +28,70 @@ export function Materiais() {
             <h2>Confira os componentes utilizados nesse produto e suas funções.</h2>
           </div>
 
-          <div class="componentes">
-            <div><img src={iconMaterial1} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+          <div class="1">
+            <div class="componentes"><img src={iconMaterial1} alt="" />
+            <h2>Módulo Relé 1 Canal 5V</h2>
+            <p> O Módulo Relé permite que componentes que não usam o arduino para serem ligados o utilizem.</p>
             </div>
 
 
-            <div><img src={iconMaterial2} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentes"><img src={iconMaterial2} alt="" />
+            <h2>Sensor de Luminosidade LDR</h2>
+            <p> O sensor de luz  mede a intensidade da luz ambiente.</p>
             </div>
 
 
-            <div><img src={iconMaterial3} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentes"><img src={iconMaterial3} alt="" />
+            <h2>Modulo Bluetooth HC05</h2>
+            <p>O Módulo Bluetooth envia informações dos componentes para algum dispositivo móvel.</p>
             </div>
 
 
-            <div><img src={iconMaterial4} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentesClaros"><img src={iconMaterial4} alt="" />
+            <h2>Sensor de Chuva</h2>
+            <p>fO Sensor de Chuva detecta a presença da chuva quando ela toca a superfície do sensor.</p>
             </div>
 
 
-            <div><img src={iconMaterial5} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentesClaros"><img src={iconMaterial5} alt="" />
+            <h2>Sensor Ultrassônico HC-SR04</h2>
+            <p>fO Sensor Ultrassônico detecta se algo ou algum volume está ficando perto dele.</p>
             </div>
 
 
-            <div><img src={iconMaterial6} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentesClaros"><img src={iconMaterial6} alt="" />
+            <h2>Arduino</h2>
+            <p>O Arduino nada mais é que um pequeno processador. Ele conecta componentes físicos de forma digital.</p>
             </div>
 
 
-            <div><img src={iconMaterial7} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentesClaros"><img src={iconMaterial7} alt="" />
+            <h2>Mini Bomba de Água Submersível 3V</h2>
+            <p>A Mini Bomba bombeia a água utilizando apenas um cano para a água ser transferida à outro local.</p>
             </div>
 
 
-            <div><img src={iconMaterial8} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentesClaros"><img src={iconMaterial8} alt="" />
+            <h2>Jumpers</h2>
+            <p>Os Jumpers nada mais são do que fios que permitem a ligação dos componentes na placa do Arduino.</p>
             </div>
 
 
-            <div><img src={iconMaterial9} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentesClaros"><img src={iconMaterial9} alt="" />
+            <h2>Módulo WS2812 LED RGB Endereçável 24 Bits</h2>
+            <p>O LED RGB Endereçável permite que controlemos as cores da forma que quisermos.</p>
             </div>
 
 
-            <div><img src={iconMaterial10} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+            <div class="componentesClaros"><img src={iconMaterial10} alt="" />
+            <h2>Protoboard 830 Pontos</h2>
+            <p>A Protoboard é usada para construir e testar circuitos eletrônicos temporários sem a necessidade de solda.</p>
             </div>
 
-            
-            <div><img src={iconMaterial11} alt="" />
-            <p>nome</p>
-            <p>funciona assim e assim e assim</p>
+
+            <div class="componentesClaros"><img src={iconMaterial11} alt="" />
+            <h2>Micro Servo 9g SG90</h2>
+            <p>O Micro Servo é utilizado para movimentar um objeto, permitindo-o girar em ângulos ou distâncias específicas</p>
             </div>
           </div>
 

@@ -7,7 +7,7 @@ export const HomeContainer = styled.div `
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 260vh; /* Define a altura do body como 100% da viewport */
+        height: 250vh; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -231,7 +231,7 @@ main {
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 260vh; /* Define a altura do body como 100% da viewport */
+        height: 600vh; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -252,20 +252,66 @@ main {
     }
 
     .componentes {
-        
-        width: 40%;           /* Centraliza o container na página */
+
+        margin: 0 auto;
+        width: 50%;     
         margin-top: 4rem;
-        margin-bottom: -15rem;
+        margin-bottom: 4rem;
         padding: 3.125rem;
-        background-color: ${props => props.theme.containerRedes};
+        background-color: ${props => props.theme.containerComponentes};
+        border-radius: 1.5rem;
+        
+
+        img {
+            width: 14rem;
+            height: 14rem;
+            justify-items: center;
+        }
+
+        p {
+            color: ${props => props.theme.subtextColor};
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        h2 {
+            margin-bottom: -0.0001rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: ${props => props.theme.textColor};
+        }
+    }
+
+    .componentesClaros {
+
+        margin: 0 auto;
+        width: 50%;     
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 3.125rem;
+        background-color: ${props => props.theme.containerComponentesClaros};
+        border-radius: 1.5rem;
 
 
         img {
-            margin: 1rem;
             width: 14rem;
             height: 14rem;
-            justify-content: center;}
-    }
+            justify-items: center;
+        }
+
+        p {
+            color: ${props => props.theme.subtextColor};
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        h2 {
+            margin-bottom: -0.0001rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: ${props => props.theme.textColor};
+        }
+        }  
 
     .container_redes {
         width: 100%;             /* Largura máxima do container */
@@ -304,7 +350,7 @@ export const AgenteContainer = styled.div `
     main {
 
         width: 100%;
-        height: 1920px;
+        height: 2000px;
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover;
         background-position: top;
@@ -347,16 +393,43 @@ export const AgenteContainer = styled.div `
         text-align: justify;
     }
 
+    .descricao {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 0.5rem; 
+        height: 1rem;
+    }
+
+
+    .nos img {
+        width: 8rem;
+        height: auto;
+        border-radius: 10px; /* Bordas arredondadas para as imagens */
+    }
+
+    h6 {
+        margin-left: 3.5rem;
+    }
+
+    .textinho {
+        margin: 0;
+        font-size: 0.5rem;
+        color: #555;
+    }
+
+    
+
     .container_redes {
         width: 100%;       
         margin: 0 auto;   
-        margin-top: 4rem;
+        margin-top: 50rem;
         margin-bottom: -1.6rem;
         padding: 3.125rem;           
         background-image: url('../src/assets/fundoredes.png');
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
+    
 
         img {
             width: 3rem;
@@ -370,6 +443,7 @@ export const AgenteContainer = styled.div `
             margin-top: -1rem;
             font-size: 1.6rem;
         }
+    }    
 
     .redes_img {
         display: flex;               
@@ -377,9 +451,8 @@ export const AgenteContainer = styled.div `
         gap: 20px;
         margin-bottom: 1.5rem;  
         margin-right: 9.2rem;      
-        margin-left: 9.2rem;         
-}}
-    
+        margin-left: 9.2rem; }
+
 `
 export const LinksContainer = styled.div `
 
@@ -388,7 +461,7 @@ export const LinksContainer = styled.div `
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 130vh; /* Define a altura do body como 100% da viewport */
+        height: 230vh; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -407,6 +480,24 @@ export const LinksContainer = styled.div `
         margin-top: 3.25rem; 
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .b_ref {
+        background-color: ${props => props.theme.buttonColor};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 4rem;
+        border-radius: 1rem;
+        margin: 2rem;
+        margin-top: 0.25rem;
+        }
+
+    a {
+        
+        font-size: 1.3rem;
+        color: ${props => props.theme.textColor};
     }
 
     .container_redes {
