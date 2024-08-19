@@ -1,7 +1,9 @@
 import styled from "styled-components"
 
+
 export const HomeContainer = styled.div `
     
+
     main {
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover; /* Faz a imagem cobrir toda a tela */
@@ -10,6 +12,9 @@ export const HomeContainer = styled.div `
         height: 250vh; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
+        max-height: 110rem;
+
+        
     }
 
     h1 {
@@ -61,6 +66,12 @@ export const HomeContainer = styled.div `
         color: ${props => props.theme.textColor};
     }
 
+
+    @media (min-width: 800px) {
+        .b1{
+            width:300rem ;
+        }
+    }
     .b1, .b2, .b3, .b4, .b5 {
         background-color: ${props => props.theme.buttonColor};
         color: ${props => props.theme.textColor};
@@ -71,8 +82,11 @@ export const HomeContainer = styled.div `
         height: 60px;
         border-radius: 1rem;
         font-size: 2rem;
-        margin: 0 auto;          
+        margin: 0 auto; 
+        max-width: 300rem;         
         margin-bottom: 0.95rem;
+
+
     }
 
     .imagesContainer {
@@ -85,14 +99,14 @@ export const HomeContainer = styled.div `
 
     .container_redes {
         width: 100%;               /* Largura do container */
-        max-width: 1000px;        /* Largura máxima do container */
+        max-width: 10000px;        /* Largura máxima do container */
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
         background-image: url('../src/assets/fundoredes.png');
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;
 
         img {
             width: 3rem;
@@ -350,7 +364,7 @@ export const AgenteContainer = styled.div `
     main {
 
         width: 100%;
-        height: 2000px;
+        height: 1400px;
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover;
         background-position: top;
@@ -394,27 +408,33 @@ export const AgenteContainer = styled.div `
     }
 
     .descricao {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
-        gap: 0.5rem; 
+        display: flex;               
+        justify-content: center;     
+        gap: 2rem; 
         height: 1rem;
     }
 
 
     .nos img {
-        width: 8rem;
+        width: 10rem;
         height: auto;
-        border-radius: 10px; /* Bordas arredondadas para as imagens */
+        border-radius: 1rem;
+        margin-top: 5rem;
     }
 
-    h6 {
-        margin-left: 3.5rem;
+    .nome_l h5 {
+        color: ${props => props.theme.textColor};
+        font-size: 1.5rem;
+        margin-left: 1.3rem;
+        margin-top: 0.5rem
     }
 
-    .textinho {
-        margin: 0;
-        font-size: 0.5rem;
-        color: #555;
+   
+    .nos p {
+        margin-top: 0;
+        font-size: 1rem;
+        color: ${props => props.theme.subtextColor};
+        
     }
 
     
@@ -451,7 +471,8 @@ export const AgenteContainer = styled.div `
         gap: 20px;
         margin-bottom: 1.5rem;  
         margin-right: 9.2rem;      
-        margin-left: 9.2rem; }
+        margin-left: 9.2rem; 
+    }
 
 `
 export const LinksContainer = styled.div `
@@ -510,6 +531,7 @@ export const LinksContainer = styled.div `
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
+        max-width: 200rem;
 
         img {
             width: 3rem;

@@ -2,6 +2,9 @@ import iconInstagram from "../assets/instagram.svg"
 import iconGithub from "../assets/github.svg"
 import iconTwitter from "../assets/twitter.svg"
 import gotas from "../assets/gotas.svg"
+import lilian from "../assets/lilian2.jpeg"
+import duda from "../assets/duda2.jpeg"
+
 
 import { AgenteContainer } from "../pages/Home.styles"
 import  Header from "../pages/Header"
@@ -30,24 +33,21 @@ export function Agente() {
 
           <div className="descricao">
             <div className="nos">
-              <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
-              <h6 clasName="nome"> Lilian Correia</h6>
-              <p clasName="textinho">Estudante do 3º ano do Ensino Médio 
-              Email: megobira@gmail.com</p>
+              <img src={lilian} alt="" />
+              <h5 clasName="nome_l"> Lilian Correia</h5>
+              <h6 clasName="textinho">lilian.correia@eaportal.org</h6>
+            </div>
+
+            <div className="nos">
+              <img src={duda} alt="" />
+              <h5 clasName="nome_m">Maria Gobira</h5>
+              <h6 clasName="textinho">megobira@gmail.com</h6>
             </div>
 
             <div className="nos">
               <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
-              <h6 clasName="nome">Maria Eduarda <br /> Gobira</h6>
-              <p clasName="textinho">Estudante do 3º ano do Ensino Médio 
-              Email: megobira@gmail.com</p>
-            </div>
-
-            <div className="nos">
-              <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
-              <h6 clasName="nome">Renata Costa</h6>
-              <p clasName="textinho">Estudante do 3º ano do Ensino Médio 
-              Email: megobira@gmail.com</p>
+              <h5 clasName="nome_r">Renata Costa</h5>
+              <h6 clasName="textinho">megobira@gmail.com</h6>
             </div>
           </div>
 
