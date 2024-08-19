@@ -34,7 +34,7 @@ export function Agente() {
           <div className="descricao">
             <div className="nos">
               <img src={lilian} alt="" />
-              <h5 clasName="nome_l"> Lilian Correia</h5>
+              <h5 clasName="nome_l">Lilian Correia</h5>
               <h6 clasName="textinho">lilian.correia@eaportal.org</h6>
             </div>
 
@@ -47,7 +47,7 @@ export function Agente() {
             <div className="nos">
               <img src="https://i.pinimg.com/564x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="" />
               <h5 clasName="nome_r">Renata Costa</h5>
-              <h6 clasName="textinho">megobira@gmail.com</h6>
+              <h6 clasName="textinho">renascimento2106@gmail.com</h6>
             </div>
           </div>
 

@@ -6,10 +6,10 @@ export const HomeContainer = styled.div `
 
     main {
         background-image: url('../src/assets/fundomobilepng.png');
-        background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: top; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: fit-content; /* Define a altura do body como 100% da viewport */
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat; 
+        height: fit-content; 
         margin: 0;
         padding: 0;
         max-height: 150rem;
@@ -33,11 +33,11 @@ export const HomeContainer = styled.div `
     }
 
     .container {
-        width: 80%;               /* Largura do container */
-        max-width: 1200px;        /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 80%;               
+        max-width: 1200px;        
+        margin: 0 auto;           
         margin-bottom: 5rem;
-        padding: 35px;            /* Espaço interno para os elementos */
+        padding: 35px;            
         background-color: ${props => props.theme.containerColor}; 
         color: ${props => props.theme.textColor};
         box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
@@ -67,7 +67,7 @@ export const HomeContainer = styled.div `
     }
 
 
-    @media (min-width: 500px) {
+    @media (min-width: 800px) {
         main{
         height: fit-content;
        }
@@ -80,8 +80,8 @@ export const HomeContainer = styled.div `
             align-items: center;
             width: 62rem;
             height: 7rem;
-            padding: 2rem 1rem; /* Aumenta o tamanho do botão */
-            font-size: 4rem; /* Aumenta o tamanho do texto */
+            padding: 2rem 1rem; 
+            font-size: 4rem; 
             border-radius: 1rem;
             margin-bottom: 2rem;
             margin-inline: auto;
@@ -120,8 +120,8 @@ export const HomeContainer = styled.div `
             align-items: center;
             width: 80rem;
             height: 9rem;
-            padding: 2rem 1rem; /* Aumenta o tamanho do botão */
-            font-size: 5rem; /* Aumenta o tamanho do texto */
+            padding: 2rem 1rem; 
+            font-size: 5rem; 
             border-radius: 1rem;
             margin-bottom: 2rem;
             margin-inline: auto;
@@ -129,23 +129,8 @@ export const HomeContainer = styled.div `
 
         }
 
-        .videozinho {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        position: relative;
-        
     }
-
-    video {
-     max-width: 100%;
-     height: auto;
-     position: relative;
-     height: 300rem;
-     border-radius: 1rem;
-    }
-    }
+    
 
     .b1, .b2, .b3, .b4, .b5 {
         background-color: ${props => props.theme.buttonColor};
@@ -221,6 +206,72 @@ header img {
     top: 50%;
     right: 15px; /* Ajuste a distância do ícone da borda direita */
     transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+.b_cont {
+    display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 800px) {
+    header {
+        position: relative;
+        width: 100%;
+        height: 90px; 
+    }
+
+    header img {
+        position: absolute;
+        width: 5rem; 
+        height: auto;
+    }
+
+    .b_cont {
+        background-color: ${props => props.theme.buttonColor};
+        color: ${props => props.theme.textColor};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        top: -3rem; 
+        width: 10rem;
+        height: 3rem;
+        margin-left: auto;
+        margin-right: 20px;
+        font-size: 1.5rem; 
+        border-radius: 1rem;
+    }
+
+    .direita {
+        display: none;
+    }
+  
+    .desktop {
+      display: flex;
+      margin-left: 10rem;
+    }
+
+    .desktop ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin-top: 30rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .desktop ul li {
+        margin-top: 3rem; 
+    }
+
+    .desktop li a {
+        color: ${props => props.theme.textColor};
+        text-decoration: none;
+        font-size: 2rem; 
+    }
 }
 `
 export const ManualContainer = styled.div `
@@ -308,57 +359,9 @@ main {
 }
 
 
-@media (min-width: 500px) {
-       main{
-        height: fit-content;
-       }
-    
-       video{
-        width: 40rem;
-        height: 30rem;
-       } 
-
-       .grid-btn {
-        margin-top: 26rem;
-        position: absolute;
-        align-items: center;
-        align-content: center;
-        height: 10rem;
-        width: 12rem;
-        font-size: 1rem;
-    } 
-
-    .container_redes {
-       margin-top: 10rem;
-    }}
-
 @media (min-width: 800px) {
-       main{
-        height: 100vh;
-       }
-       
-        h1 {
-            font-size: 6rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-        }
-
-       video{
-        width: 60rem;
-        height: 35rem;
-       } 
-
-       .grid-btn {
-        margin-top: 30rem;
-        position: absolute;
-        align-items: center;
-        align-content: center;
-        height: 14rem;
-        width: 12rem;
-        font-size: 1rem;}
-    }
+    
+}
 
     
 
@@ -491,11 +494,11 @@ main {
         }  
 
     .container_redes {
-        width: 100%;             /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%;       
+        margin: 0 auto;      
         margin-top: 4rem;
         margin-bottom: -15rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
+        padding: 3.125rem;          
         background-image: url('../src/assets/fundoredes.png');
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
@@ -515,27 +518,45 @@ main {
         }
 
     .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;              
+        justify-content: center;    
         gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+        margin-bottom: 1.5rem;                
 }}
 
 `
 export const AgenteContainer = styled.div `
 
+      
+      @media (min-width: 800px) {
+            height:88rem ;
+        }
+
+
+        @media (min-width: 300px) {
+            height:118rem ;
+        }
+
+        @media (min-width: 500px) {            
+            height:100rem ;
+        }
+
+
     main {
 
         width: 100%;
-        height: 1334px;
+        height: 100%;
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
         position: relative;
         overflow: hidden;
-        max-height: 115rem;
     }
+
+h5{
+    text-align: center;
+}
 
     h1 {
         font-size: 4rem;
@@ -577,6 +598,7 @@ export const AgenteContainer = styled.div `
         justify-content: center;     
         gap: 2rem; 
         height: 1rem;
+        margin-bottom: 28rem;
     }
 
 
@@ -598,17 +620,17 @@ export const AgenteContainer = styled.div `
         margin-top: 0;
         font-size: 1rem;
         color: ${props => props.theme.subtextColor};
-        
+        margin-bottom: 5rem;
     }
 
     
 
     .container_redes {
-        width: 100%;       
-        margin: 0 auto;   
-        margin-top: 50rem;
-        margin-bottom: -1.6rem;
-        padding: 3.125rem;           
+        width: 100%;             /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        margin-bottom: 15rem;
+        padding: 4.825rem;            /* Espaço interno para os elementos */
         background-image: url('../src/assets/fundoredes.png');
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
@@ -619,6 +641,7 @@ export const AgenteContainer = styled.div `
             width: 3rem;
             height: auto;
             margin-bottom: 1rem;
+            gap: -4rem;
         }
 
         p {
@@ -632,7 +655,7 @@ export const AgenteContainer = styled.div `
     .redes_img {
         display: flex;               
         justify-content: center;     
-        gap: 20px;
+        gap: 2px;
         margin-bottom: 1.5rem;  
         margin-right: 9.2rem;      
         margin-left: 9.2rem; 
