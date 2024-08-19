@@ -68,26 +68,41 @@ export const HomeContainer = styled.div `
 
 
     @media (min-width: 800px) {
-        .b1{
-            width:300rem ;
+        h1 {
+            font-size: 7rem;
+        }
+        
+        h2 {
+            font-size: 3rem;
+
+        }
+        .container {
+            display: contents;
+        }
+
+        .container p {
+            font-size: 2rem;
+            margin: 5rem;
+        }
+
+        .b1, .b2, .b3, .b4, .b5 {
+            background-color: ${props => props.theme.buttonColor};
+            color: ${props => props.theme.textColor};
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80rem;
+            height: 9rem;
+            padding: 2rem 1rem; /* Aumenta o tamanho do botão */
+            font-size: 5rem; /* Aumenta o tamanho do texto */
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            
         }
     }
-    .b1, .b2, .b3, .b4, .b5 {
-        background-color: ${props => props.theme.buttonColor};
-        color: ${props => props.theme.textColor};
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 350px;
-        height: 60px;
-        border-radius: 1rem;
-        font-size: 2rem;
-        margin: 0 auto; 
-        max-width: 300rem;         
-        margin-bottom: 0.95rem;
+    
 
-
-    }
+    
 
     .imagesContainer {
         display: flex;               /* Define como flexbox */
@@ -192,7 +207,7 @@ main {
      max-width: 100%;
      height: auto;
      position: relative;
-     
+    max-height: 300rem;
      border-radius: 1rem;
     }
 
@@ -364,13 +379,14 @@ export const AgenteContainer = styled.div `
     main {
 
         width: 100%;
-        height: 1400px;
+        height: 1334px;
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
         position: relative;
         overflow: hidden;
+        max-height: 115rem;
     }
 
     h1 {
@@ -378,6 +394,7 @@ export const AgenteContainer = styled.div `
         color: ${props => props.theme.textColor};
         text-align: center;
         margin-top: 3.25rem;
+        max-height:10rem;
     }
 
     h2 {
@@ -422,13 +439,12 @@ export const AgenteContainer = styled.div `
         margin-top: 5rem;
     }
 
-    .nome_l h5 {
+    .nome_l {
         color: ${props => props.theme.textColor};
         font-size: 1.5rem;
         margin-left: 1.3rem;
         margin-top: 0.5rem
     }
-
    
     .nos p {
         margin-top: 0;
@@ -531,7 +547,6 @@ export const LinksContainer = styled.div `
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
-        max-width: 200rem;
 
         img {
             width: 3rem;
