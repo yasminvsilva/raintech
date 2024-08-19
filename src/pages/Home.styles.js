@@ -67,6 +67,61 @@ export const HomeContainer = styled.div `
     }
 
 
+
+    .nuvenzinhasimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2rem;
+    }
+
+    
+
+    .b1, .b2, .b3, .b4, .b5 {
+        background-color: ${props => props.theme.buttonColor};
+        color: ${props => props.theme.textColor};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        margin-inline: auto;
+    }
+    .imagesContainer {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 35px; 
+        margin-bottom: 2.5rem;
+        height: 5.5rem;
+    }
+    
+    .container_redes {
+        width: 100%;               /* Largura do container */
+        max-width: 10000px;        /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+            width: 3rem;
+            height: auto;
+        }
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+        }
+        
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+
     @media (min-width: 800px) {
         main {
             height: 250vh;
@@ -110,40 +165,38 @@ export const HomeContainer = styled.div `
         }
         
         .imagesContainer {
-            display: flex;               
-            justify-content: center;     
-            gap: 35px; 
-            margin-bottom: 2.5rem;
-            height: 5.5rem;
-        }
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 35px; 
+        margin-bottom: 2.5rem;
+        height: 5.5rem;
+    }
 
-        .container_redes {
-            width: 100%;              
-            max-width: 10000px;       
-            margin: 0 auto;           
-            margin-top: 4rem;
-            padding: 3.125rem;          
-            background-image: url('../src/assets/fundoredes.png');
-            background-color: ${props => props.theme.containerRedes};
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            img {
+    .container_redes {
+        width: 100%;               /* Largura do container */
+        max-width: 10000px;        /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
             width: 3rem;
             height: auto;
-            }
-
-            p {
+        }
+        p {
             color: ${props => props.theme.textColor};
             text-align: center;
-            }
-
-        .redes_img {
-            display: flex;               
-            justify-content: center;     
-            gap: 20px;
-            margin-bottom: 1.5rem;                   
         }
+        
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}
     }
 }
 `
@@ -245,7 +298,7 @@ main {
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
-        height: 100vh; 
+        height: 100%; 
         margin: 0;
         padding: 0;
     }
@@ -324,9 +377,6 @@ main {
 
 
 @media (min-width: 800px) {
-    main {
-        height: 130vh;
-    }
 
     h1 {
         font-size: 7rem;
@@ -664,7 +714,7 @@ export const LinksContainer = styled.div `
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 230vh; /* Define a altura do body como 100% da viewport */
+        height: 100%; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -704,8 +754,7 @@ export const LinksContainer = styled.div `
     }
 
     .container_redes {
-        width: 100%;               /* Largura do container */
-        max-width: 1000px;        /* Largura máxima do container */
+        width: 100%;    /* Largura máxima do container */
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
@@ -740,10 +789,10 @@ export const FaleconoscoContainer = styled.div `
 
     main {
         background-image: url('../src/assets/fundomobilepng.png');
-        background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: center; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 260vh; /* Define a altura do body como 100% da viewport */
+        background-size: cover; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: 100%; 
         margin: 0;
         padding: 0;
     }
@@ -753,14 +802,40 @@ export const FaleconoscoContainer = styled.div `
         color: ${props => props.theme.textColor};
         text-align: center;
         margin-top: 3.25rem;
+        margin-bottom: 4rem;
     }
 
+    .botoes {
+        display:flex;
+        flex-direction: column;
+        width: 20rem;
+        margin-inline:auto;
+        gap: 1.5rem;
+
+    }
+
+    .nomenome, .emailemail, .mensagem {
+        padding:1rem;
+        border-radius: 1rem;
+    }
+
+        .botaoenviar{
+            background-color: ${props => props.theme.buttonColor};
+            width: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-inline:auto;
+            margin-top: 2.5rem;
+            border-radius: 3rem;
+        }
+
     .container_redes {
-        width: 100%;             /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%;             
+        margin: 0 auto;           
         margin-top: 4rem;
         margin-bottom: -2rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
+        padding: 3.125rem;            
         background-image: url('../src/assets/fundoredes.png');
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
