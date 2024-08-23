@@ -95,23 +95,24 @@ export const HomeContainer = styled.div `
         margin-inline: auto;
     }
     .imagesContainer {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;               
+        justify-content: center;   
         gap: 35px; 
         margin-bottom: 2.5rem;
         height: 5.5rem;
     }
     
     .container_redes {
-        width: 100%;               /* Largura do container */
-        max-width: 10000px;        /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%;
+        max-width: 10000px; 
+        margin: 0 auto;
         margin-top: 4rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
+        padding: 3.125rem;
         background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
+
         img {
             width: 3rem;
             height: auto;
@@ -122,10 +123,10 @@ export const HomeContainer = styled.div `
         }
         
     .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;
+        justify-content: center;
         gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+        margin-bottom: 1.5rem;
 }}
 
 
@@ -198,20 +199,20 @@ export const HomeContainer = styled.div `
         }
         
         .imagesContainer {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;
+        justify-content: center; 
         gap: 35px; 
         margin-bottom: 2.5rem;
         height: 5.5rem;
     }
 
     .container_redes {
-        width: 100%;               /* Largura do container */
-        max-width: 10000px;        /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%;
+        max-width: 10000px;
+        margin: 0 auto;
         margin-top: 4rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
+        padding: 3.125rem;
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
@@ -225,10 +226,10 @@ export const HomeContainer = styled.div `
         }
         
     .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;
+        justify-content: center;
         gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+        margin-bottom: 1.5rem;
 }
     }
 }
@@ -237,25 +238,25 @@ export const HeaderContainer = styled.div `
 header {
     position: relative;
     width: 100%;
-    height: 60px; /* Ajuste a altura do cabeçalho conforme necessário */
+    height: 60px;
 }
 
 header img {
     position: absolute;
-    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 30px;
+    height: auto;
 }
 
 .esquerda {
     top: 50%;
-    left: 15px; /* Ajuste a distância do ícone da borda esquerda */
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    left: 15px;
+    transform: translateY(-50%);
 }
 
 .direita {
     top: 50%;
-    right: 15px; /* Ajuste a distância do ícone da borda direita */
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    right: 15px;
+    transform: translateY(-50%);
 }
 
 .b_cont {
@@ -738,10 +739,10 @@ p {
 .container_redes {
     width: 100%;   
     height: 15rem;
-    max-width: 10000px;          /* Largura máxima do container */
-    margin: 0 auto;           /* Centraliza o container na página */
+    max-width: 10000px;
+    margin: 0 auto;
     margin-top: 4rem;
-    padding: 2.825rem;            /* Espaço interno para os elementos */
+    padding: 2.825rem;
     background-image: url(${imgredes});
     background-color: ${props => props.theme.containerRedes};
     background-repeat: no-repeat;
@@ -788,10 +789,10 @@ export const LinksContainer = styled.div `
 }
     main {
         background-image: url(${img});
-        background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: top; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 100%; /* Define a altura do body como 100% da viewport */
+        background-size: cover;
+        background-position: top; 
+        background-repeat: no-repeat;
+        height: 100%;
         margin: 0;
         padding: 0;
     }
@@ -831,10 +832,10 @@ export const LinksContainer = styled.div `
     }
 
     .container_redes {
-        width: 100%;    /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%; 
+        margin: 0 auto;
         margin-top: 4rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
+        padding: 3.125rem;
         background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
@@ -960,10 +961,10 @@ export const FaleconoscoContainer = styled.div `
         }
 
     .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;
+        justify-content: center;
         gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+        margin-bottom: 1.5rem;
     }
 }
 
