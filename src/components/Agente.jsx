@@ -26,7 +26,7 @@ export function Agente() {
           <img src={gotas} alt="" />
           </div>
 
-          <div>
+          <div class="textonos">
             <p>Bem-vindo à página de apresentação da nossa equipe! Somos um grupo de estudantes do Centro Universitário Adventista de São Paulo (UNASP)</p>
             <p>Estamos atualmente no 3º ano do Ensino Médio, cursando o programa Técnico em Informática Integrado ao Ensino Médio. Combinando nosso interesse pela tecnologia e nosso compromisso com a sustentabilidade, trabalhamos arduamente para desenvolver e implementar um sistema eficiente de captação de água da chuva. Acreditamos que, através da inovação e do trabalho em equipe, podemos contribuir para um futuro mais sustentável.</p>
             <p>Se você tiver interesse em saber mais sobre o nosso trabalho ou quiser colaborar de alguma forma, não hesite em nos contatar. Estamos ansiosos para compartilhar nossa jornada com você!</p>

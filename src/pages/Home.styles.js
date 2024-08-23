@@ -128,109 +128,6 @@ export const HomeContainer = styled.div `
         margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
 }}
 
-    @media (min-width: 1300px) {
-        main {
-            height: 100%;
-        }
-
-        h1 {
-            font-size: 7rem;
-        }
-
-        h2 {
-            font-size: 3rem;
-        }
-
-        .container {
-            display: contents;  
-        }
-
-        .container img {
-            display: contents;  
-        }
-
-        .container p {
-            font-size: 2rem;
-            margin: 5rem;
-        }
-
-        /* */
-
-
-        .p_benef {
-            margin-bottom: 0;
-        }
-
-        .t_benef {
-            margin-top: 1.5rem;
-            margin-bottom: 0.25rem;
-
-        }
-
-        .obj {
-            margin-top: 1.5rem;
-        }
-
-    .arrumarborda{
-        margin-left: 30rem;
-        margin-right: 30rem;
-        text-align: justify;
-    }
-
-
-        /* */
-        
-        .b1, .b2, .b3, .b4, .b5 {
-            background-color: ${props => props.theme.buttonColor};
-            color: ${props => props.theme.textColor};
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80rem;
-            height: 9rem;
-            padding: 2rem 1rem; 
-            font-size: 5rem; 
-            border-radius: 1rem;
-            margin-bottom: 2rem;
-            margin-inline: auto;
-
-        }
-        
-        .imagesContainer {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
-        gap: 35px; 
-        margin-bottom: 2.5rem;
-        height: 5.5rem;
-    }
-
-    .container_redes {
-        width: 100%;               /* Largura do container */
-        max-width: 10000px;        /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
-        margin-top: 4rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
-        background-color: ${props => props.theme.containerRedes};
-        background-repeat: no-repeat;
-        background-size: cover;
-        img {
-            width: 3rem;
-            height: auto;
-        }
-        p {
-            color: ${props => props.theme.textColor};
-            text-align: center;
-        }
-        
-    .redes_img {
-        display: flex;               /* Define como flexbox */
-        justify-content: center;     /* Centraliza as imagens horizontalmente */
-        gap: 20px;
-        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
-}
-    }
-}
 
 @media (min-width: 800px) {
         main {
@@ -276,8 +173,8 @@ export const HomeContainer = styled.div `
         }
 
     .arrumarborda{
-        margin-left: 27.5rem;
-        margin-right: 27.2rem;
+        margin-left: 17.5rem;
+        margin-right: 17.2rem;
         text-align: justify;
     }
 
@@ -563,8 +460,8 @@ export const MateriaisContainer = styled.div `
         margin-inline: auto;
         justify-content: center;
         }
+  
 
-       
     }
 
     @media (min-width: 500px) {
@@ -707,29 +604,53 @@ main {
 `
 export const AgenteContainer = styled.div `
 
+
       
 @media (min-width: 800px) {
-    height:88rem ;
+    main{
+    height:100%;
+}
+    
 
-    .nos img{
-    width: 3rem;
+.nos img{
+    width: 20rem;
     margin-top: 0;
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    height: 20rem;
 }
+ 
+ .textonos p{
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+ }
+
+ h1 {
+    font-size: 8rem;
+    color: ${props => props.theme.textColor};
+    text-align: center;
+    margin-top: 3.25rem;
+    max-height:10rem;
 }
 
+h2 {
+    font-size: 5rem;
+    color: ${props => props.theme.subtextColor};
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.7
+}
+
+}
 
 @media (min-width: 300px) {
-    height:118rem ;
+    height:100% ;
 }
 
 @media (min-width: 500px) {            
-    height:100rem ;
+    height:100% ;
 }
-
 
 main {
 
@@ -772,14 +693,7 @@ h2 {
     height: auto;
 }
 
-.nos img{
-    width: 3rem;
-    margin-top: 0;
-    display: flex;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
+
 
 p {
     margin-top: 2rem;
@@ -802,7 +716,7 @@ p {
 
 .nos img {
     width: 10rem;
-    height: auto;
+    height: 10rem;
     border-radius: 1rem;
     margin-top: 5rem;
 }
@@ -823,11 +737,11 @@ p {
 
 .container_redes {
     width: 100%;   
+    height: 15rem;
     max-width: 10000px;          /* Largura máxima do container */
     margin: 0 auto;           /* Centraliza o container na página */
     margin-top: 4rem;
-    margin-bottom: 15rem;
-    padding: 4.825rem;            /* Espaço interno para os elementos */
+    padding: 2.825rem;            /* Espaço interno para os elementos */
     background-image: url(${imgredes});
     background-color: ${props => props.theme.containerRedes};
     background-repeat: no-repeat;
@@ -856,12 +770,22 @@ p {
     gap: 2px;
     margin-bottom: 1.5rem;  
     margin-right: 9.2rem;      
-    margin-left: 9.2rem; 
+    margin-left: 11rem; 
     }
 
 `
 export const LinksContainer = styled.div `
 
+@media (min-width: 800px){
+.referencias-links{
+    margin-left: 30rem;
+    margin-right: 30rem;
+
+    .b_ref{
+        width: 81rem;
+    }
+}
+}
     main {
         background-image: url(${img});
         background-size: cover; /* Faz a imagem cobrir toda a tela */
@@ -893,7 +817,7 @@ export const LinksContainer = styled.div `
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 10rem;
+        width: 33.7rem;
         height: 4rem;
         border-radius: 1rem;
         margin: 2rem;

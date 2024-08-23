@@ -16,7 +16,7 @@ export function Links() {
             <h2></h2>
           </div>
 
-          <div>
+          <div class="referencias-links">
             <p>MEDRI, Rívea; MINILLO, Alessandro; GERTRUDES, Eliana; FERREIRA, Heloiza; TANGERINO, Edson. Uso de filtros de carvão ativado granular associado a microrganismos para remoção de fármacos no tratamento de água de abastecimento. Scielo Brasil, 2016. Acesso em: 13 de mar. de 2024.</p>
             <div className="b_ref"><a href="https://www.scielo.br/j/esa/a/qShs6gCcN46bLKrnCB9Ljkr/?lang=pt#">Disponível em:</a></div>
           
