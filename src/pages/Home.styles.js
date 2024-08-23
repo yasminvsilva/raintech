@@ -12,10 +12,9 @@ export const HomeContainer = styled.div `
         background-size: cover; 
         background-position: top;
         background-repeat: no-repeat; 
-        height: fit-content; 
+        height: 100%; 
         margin: 0;
         padding: 0;
-        max-height: 150rem;
 
         
     }
@@ -51,7 +50,7 @@ export const HomeContainer = styled.div `
 
         .t_benef {
             margin-top: 1.5rem;
-            margin-bottom: 0.25rem;
+            margin-bottom: 1.25rem;
 
         }
 
@@ -63,6 +62,10 @@ export const HomeContainer = styled.div `
             margin-bottom: 1rem;
             font-size: 1.25rem;
         }
+    }
+
+    .arrumarborda{
+        text-align: justify;
     }
 
     a {
@@ -125,9 +128,9 @@ export const HomeContainer = styled.div `
         margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
 }}
 
-    @media (min-width: 800px) {
+    @media (min-width: 1300px) {
         main {
-            height: 250vh;
+            height: 100%;
         }
 
         h1 {
@@ -150,6 +153,136 @@ export const HomeContainer = styled.div `
             font-size: 2rem;
             margin: 5rem;
         }
+
+        /* */
+
+
+        .p_benef {
+            margin-bottom: 0;
+        }
+
+        .t_benef {
+            margin-top: 1.5rem;
+            margin-bottom: 0.25rem;
+
+        }
+
+        .obj {
+            margin-top: 1.5rem;
+        }
+
+    .arrumarborda{
+        margin-left: 30rem;
+        margin-right: 30rem;
+        text-align: justify;
+    }
+
+
+        /* */
+        
+        .b1, .b2, .b3, .b4, .b5 {
+            background-color: ${props => props.theme.buttonColor};
+            color: ${props => props.theme.textColor};
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80rem;
+            height: 9rem;
+            padding: 2rem 1rem; 
+            font-size: 5rem; 
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            margin-inline: auto;
+
+        }
+        
+        .imagesContainer {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 35px; 
+        margin-bottom: 2.5rem;
+        height: 5.5rem;
+    }
+
+    .container_redes {
+        width: 100%;               /* Largura do container */
+        max-width: 10000px;        /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+            width: 3rem;
+            height: auto;
+        }
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+        }
+        
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}
+    }
+}
+
+@media (min-width: 800px) {
+        main {
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 7rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        .container {
+            display: contents;  
+        }
+
+        .container img {
+            display: contents;  
+        }
+
+        .container p {
+            font-size: 2rem;
+            margin: 5rem;
+        }
+
+        /* */
+
+
+        .p_benef {
+            margin-bottom: 0;
+        }
+
+        .t_benef {
+            margin-top: 1.5rem;
+            margin-bottom: 0.25rem;
+
+        }
+
+        .obj {
+            margin-top: 1.5rem;
+        }
+
+    .arrumarborda{
+        margin-left: 27.5rem;
+        margin-right: 27.2rem;
+        text-align: justify;
+    }
+
+
+        /* */
         
         .b1, .b2, .b3, .b4, .b5 {
             background-color: ${props => props.theme.buttonColor};
@@ -408,7 +541,6 @@ main {
         position: absolute;
         align-items: center;
         align-content: center;
-        height: 3rem;
         width: 12rem;
         font-size: 1rem;
     } 
