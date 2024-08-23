@@ -35,21 +35,21 @@ export function Agente() {
 
           <div className="descricao">
             <div className="nos">
-              <img src={lilian} alt="" />
-              <h5 clasName="nome_l">Lilian Correia</h5>
-              <h6 clasName="textinho">lilian.correia@eaportal.org</h6>
+              <img class="imagemnos" src={lilian} alt="" />
+              <h5 clasName="nome">Lilian Correia</h5>
+              <h6 clasName="textinho">licorreia@gmail.com</h6>
             </div>
 
             <div className="nos">
-              <img src={duda} alt="" />
-              <h5 clasName="nome_m">Maria Gobira</h5>
+              <img class="imagemnos" src={duda} alt="" />
+              <h5 clasName="nome">Maria Gobira</h5>
               <h6 clasName="textinho">megobira@gmail.com</h6>
             </div>
 
             <div className="nos">
-              <img src={renata} alt="" />
-              <h5 clasName="nome_r">Renata Costa</h5>
-              <h6 clasName="textinho">renascimento2106@gmail.com</h6>
+              <img class="imagemnos" src={renata} alt="" />
+              <h5 clasName="nome">Renata Costa</h5>
+              <h6 clasName="textinho">recosta@gmail.com</h6>
             </div>
           </div>
 

@@ -1,11 +1,14 @@
-import styled from "styled-components"
+import styled from "styled-components";
+
+import img from '../assets/fundomobilepng.png';
+import imgredes from '../assets/fundoredes.png';
 
 
 export const HomeContainer = styled.div `
     
 
     main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; 
         background-position: top;
         background-repeat: no-repeat; 
@@ -67,6 +70,61 @@ export const HomeContainer = styled.div `
     }
 
 
+
+    .nuvenzinhasimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2rem;
+    }
+
+    
+
+    .b1, .b2, .b3, .b4, .b5 {
+        background-color: ${props => props.theme.buttonColor};
+        color: ${props => props.theme.textColor};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        margin-inline: auto;
+    }
+    .imagesContainer {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 35px; 
+        margin-bottom: 2.5rem;
+        height: 5.5rem;
+    }
+    
+    .container_redes {
+        width: 100%;               /* Largura do container */
+        max-width: 10000px;        /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+            width: 3rem;
+            height: auto;
+        }
+        p {
+            color: ${props => props.theme.textColor};
+            text-align: center;
+        }
+        
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+
     @media (min-width: 800px) {
         main {
             height: 250vh;
@@ -110,40 +168,38 @@ export const HomeContainer = styled.div `
         }
         
         .imagesContainer {
-            display: flex;               
-            justify-content: center;     
-            gap: 35px; 
-            margin-bottom: 2.5rem;
-            height: 5.5rem;
-        }
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 35px; 
+        margin-bottom: 2.5rem;
+        height: 5.5rem;
+    }
 
-        .container_redes {
-            width: 100%;              
-            max-width: 10000px;       
-            margin: 0 auto;           
-            margin-top: 4rem;
-            padding: 3.125rem;          
-            background-image: url('../src/assets/fundoredes.png');
-            background-color: ${props => props.theme.containerRedes};
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            img {
+    .container_redes {
+        width: 100%;               /* Largura do container */
+        max-width: 10000px;        /* Largura máxima do container */
+        margin: 0 auto;           /* Centraliza o container na página */
+        margin-top: 4rem;
+        padding: 3.125rem;            /* Espaço interno para os elementos */
+        background-image: url('../src/assets/fundoredes.png');
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
             width: 3rem;
             height: auto;
-            }
-
-            p {
+        }
+        p {
             color: ${props => props.theme.textColor};
             text-align: center;
-            }
-
-        .redes_img {
-            display: flex;               
-            justify-content: center;     
-            gap: 20px;
-            margin-bottom: 1.5rem;                   
         }
+        
+    .redes_img {
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
+        gap: 20px;
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}
     }
 }
 `
@@ -241,11 +297,11 @@ header img {
 export const ManualContainer = styled.div `
 
 main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
-        height: 100vh; 
+        height: 100%; 
         margin: 0;
         padding: 0;
     }
@@ -324,9 +380,6 @@ main {
 
 
 @media (min-width: 800px) {
-    main {
-        height: 130vh;
-    }
 
     h1 {
         font-size: 7rem;
@@ -398,7 +451,7 @@ export const MateriaisContainer = styled.div `
 }
 
 main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
@@ -523,137 +576,155 @@ main {
 export const AgenteContainer = styled.div `
 
       
-      @media (min-width: 800px) {
-            height:88rem ;
-        }
+@media (min-width: 800px) {
+    height:88rem ;
+
+    .nos img{
+    width: 3rem;
+    margin-top: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+}
 
 
-        @media (min-width: 300px) {
-            height:118rem ;
-        }
+@media (min-width: 300px) {
+    height:118rem ;
+}
 
-        @media (min-width: 500px) {            
-            height:100rem ;
-        }
+@media (min-width: 500px) {            
+    height:100rem ;
+}
 
 
-    main {
+main {
 
-        width: 100%;
-        height: 100%;
-        background-image: url('../src/assets/fundomobilepng.png');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        position: relative;
-        overflow: hidden;
-    }
+    width: 100%;
+    height: 100%;
+    background-image: url(${img});
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
 
 h5{
     text-align: center;
 }
 
-    h1 {
-        font-size: 4rem;
-        color: ${props => props.theme.textColor};
-        text-align: center;
-        margin-top: 3.25rem;
-        max-height:10rem;
-    }
+h1 {
+    font-size: 4rem;
+    color: ${props => props.theme.textColor};
+    text-align: center;
+    margin-top: 3.25rem;
+    max-height:10rem;
+}
 
-    h2 {
-        font-size: 1.5rem;
-        color: ${props => props.theme.subtextColor};
-        text-align: center;
-        margin-bottom: 2rem;
-        opacity: 0.7
-    }
+h2 {
+    font-size: 1.5rem;
+    color: ${props => props.theme.subtextColor};
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.7
+}
 
-   img {
+.gota_img img{
+    width: 3rem;
+    margin-top: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.nos img{
+    width: 3rem;
+    margin-top: 0;
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    text-align: justify;
+}
+
+.descricao {
+    display: flex;               
+    justify-content: center;     
+    gap: 2rem; 
+    height: 1rem;
+    margin-bottom: 28rem;
+}
+
+
+.nos img {
+    width: 10rem;
+    height: auto;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+
+.nome_l {
+    color: ${props => props.theme.textColor};
+    font-size: 1.5rem;
+    margin-left: 1.3rem;
+    margin-top: 0.5rem
+}
+   
+.nos p {
+    margin-top: 0;
+    font-size: 1rem;
+    color: ${props => props.theme.subtextColor};
+    margin-bottom: 5rem;
+}
+
+.container_redes {
+    width: 100%;   
+    max-width: 10000px;          /* Largura máxima do container */
+    margin: 0 auto;           /* Centraliza o container na página */
+    margin-top: 4rem;
+    margin-bottom: 15rem;
+    padding: 4.825rem;            /* Espaço interno para os elementos */
+    background-image: url(${imgredes});
+    background-color: ${props => props.theme.containerRedes};
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    img {
         width: 3rem;
-        margin-top: 0;
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
         height: auto;
-   }
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        gap: 4rem;
+        }
 
     p {
-        margin-top: 2rem;
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        justify-content: center;
-        text-align: justify;
-    }
-
-    .descricao {
-        display: flex;               
-        justify-content: center;     
-        gap: 2rem; 
-        height: 1rem;
-        margin-bottom: 28rem;
-    }
-
-
-    .nos img {
-        width: 10rem;
-        height: auto;
-        border-radius: 1rem;
-        margin-top: 5rem;
-    }
-
-    .nome_l {
         color: ${props => props.theme.textColor};
-        font-size: 1.5rem;
-        margin-left: 1.3rem;
-        margin-top: 0.5rem
+        text-align: center;
+        margin-top: -1rem;
+        font-size: 1.6rem;
     }
-   
-    .nos p {
-        margin-top: 0;
-        font-size: 1rem;
-        color: ${props => props.theme.subtextColor};
-        margin-bottom: 5rem;
-    }
-
-    
-
-    .container_redes {
-        width: 100%;             /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
-        margin-top: 4rem;
-        margin-bottom: 15rem;
-        padding: 4.825rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
-        background-color: ${props => props.theme.containerRedes};
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-
-        img {
-            width: 3rem;
-            height: auto;
-            margin-bottom: 1rem;
-            gap: -4rem;
-        }
-
-        p {
-            color: ${props => props.theme.textColor};
-            text-align: center;
-            margin-top: -1rem;
-            font-size: 1.6rem;
-        }
     }    
 
-    .redes_img {
-        display: flex;               
-        justify-content: center;     
-        gap: 2px;
-        margin-bottom: 1.5rem;  
-        margin-right: 9.2rem;      
-        margin-left: 9.2rem; 
+.redes_img {
+    display: flex;               
+    justify-content: center;     
+    gap: 2px;
+    margin-bottom: 1.5rem;  
+    margin-right: 9.2rem;      
+    margin-left: 9.2rem; 
     }
 
 `
@@ -664,7 +735,7 @@ export const LinksContainer = styled.div `
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 230vh; /* Define a altura do body como 100% da viewport */
+        height: 100%; /* Define a altura do body como 100% da viewport */
         margin: 0;
         padding: 0;
     }
@@ -704,8 +775,7 @@ export const LinksContainer = styled.div `
     }
 
     .container_redes {
-        width: 100%;               /* Largura do container */
-        max-width: 1000px;        /* Largura máxima do container */
+        width: 100%;    /* Largura máxima do container */
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
@@ -740,10 +810,10 @@ export const FaleconoscoContainer = styled.div `
 
     main {
         background-image: url('../src/assets/fundomobilepng.png');
-        background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: center; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        height: 260vh; /* Define a altura do body como 100% da viewport */
+        background-size: cover; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: 100%; 
         margin: 0;
         padding: 0;
     }
@@ -753,14 +823,40 @@ export const FaleconoscoContainer = styled.div `
         color: ${props => props.theme.textColor};
         text-align: center;
         margin-top: 3.25rem;
+        margin-bottom: 4rem;
     }
 
+    .botoes {
+        display:flex;
+        flex-direction: column;
+        width: 20rem;
+        margin-inline:auto;
+        gap: 1.5rem;
+
+    }
+
+    .nomenome, .emailemail, .mensagem {
+        padding:1rem;
+        border-radius: 1rem;
+    }
+
+        .botaoenviar{
+            background-color: ${props => props.theme.buttonColor};
+            width: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-inline:auto;
+            margin-top: 2.5rem;
+            border-radius: 3rem;
+        }
+
     .container_redes {
-        width: 100%;             /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%;             
+        margin: 0 auto;           
         margin-top: 4rem;
         margin-bottom: -2rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
+        padding: 3.125rem;            
         background-image: url('../src/assets/fundoredes.png');
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
