@@ -4,9 +4,10 @@ import img from '../assets/fundomobilepng.png';
 import imgredes from '../assets/fundoredes.png';
 import imgdesk from '../assets/fund0.png'
 
-
 export const HomeContainer = styled.div `
-    
+ 
+
+
 
     main {
         background-image: url(${img});
@@ -240,6 +241,10 @@ export const HomeContainer = styled.div `
 }
 `
 export const HeaderContainer = styled.div `
+
+
+
+
 header {
     position: relative;
     width: 100%;
@@ -808,7 +813,7 @@ export const LinksContainer = styled.div `
     margin-right: 30rem;
 
     .b_ref{
-        width: 81rem;
+        width: 30rem;
     }
 }
 
@@ -897,11 +902,14 @@ export const FaleconoscoContainer = styled.div `
         background-image: url(${imgdesk});
         background-size: cover;
         background-position: top; 
+        height:100%;
 }
  
 
 .deixar-maior{
-    margin-top: 12rem;
+    margin-top: 20rem;
+    
+    margin-bottom: 12rem;
     height: 30rem;
 
     .botaoenviar{

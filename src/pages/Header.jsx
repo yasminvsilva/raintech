@@ -6,7 +6,6 @@ import { HeaderContainer } from "./Home.styles"
 export default function Header() {
     return (
     <HeaderContainer>
-
         <header className="C">
             <div className="mobile">
             <a href="/" onCLick={(e) => handleNavegation(e,'/')}> <img src={iconIcon} alt="ícone do site" class="esquerda" /></a>
