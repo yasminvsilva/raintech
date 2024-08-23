@@ -105,7 +105,7 @@ export const HomeContainer = styled.div `
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
@@ -352,7 +352,7 @@ main {
         margin: 0 auto;           
         margin-top: 4rem;
         padding: 3.125rem;          
-        background-image: url('../src/assets/fundoredes.png');
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
@@ -547,7 +547,7 @@ main {
         margin-top: 4rem;
         margin-bottom: -15rem;
         padding: 3.125rem;          
-        background-image: url('../src/assets/fundoredes.png');
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
@@ -731,7 +731,7 @@ p {
 export const LinksContainer = styled.div `
 
     main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; /* Faz a imagem cobrir toda a tela */
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
@@ -779,7 +779,7 @@ export const LinksContainer = styled.div `
         margin: 0 auto;           /* Centraliza o container na página */
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
@@ -809,7 +809,7 @@ export const LinksContainer = styled.div `
 export const FaleconoscoContainer = styled.div `
 
     main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
@@ -857,7 +857,7 @@ export const FaleconoscoContainer = styled.div `
         margin-top: 4rem;
         margin-bottom: -2rem;
         padding: 3.125rem;            
-        background-image: url('../src/assets/fundoredes.png');
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
