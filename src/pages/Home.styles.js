@@ -333,7 +333,7 @@ header img {
 export const ManualContainer = styled.div `
 
 main {
-        background-image: url(${imgdesk});
+        background-image: url(${img});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
@@ -418,7 +418,11 @@ main {
 
 @media (min-width: 800px) {
 
-
+.imagemnova{
+        background-image: url(${imgdesk});
+        background-size: cover;
+        background-position: top; 
+}
     h1 {
         font-size: 7rem;
     }
@@ -793,6 +797,12 @@ p {
 export const LinksContainer = styled.div `
 
 @media (min-width: 800px){
+    .imagemnova {
+        background-image: url(${imgdesk});
+        background-position: top; 
+    }
+
+
 .referencias-links{
     margin-left: 30rem;
     margin-right: 30rem;
@@ -801,16 +811,18 @@ export const LinksContainer = styled.div `
         width: 81rem;
     }
 }
+
 }
-    main {
-        background-image: url(${imgdesk});
+
+main {
+        background-image: url(${img});
         background-size: cover;
         background-position: top; 
         background-repeat: no-repeat;
         height: 100%;
         margin: 0;
         padding: 0;
-    }
+}
 
     h1 {
         font-size: 4rem;
@@ -881,7 +893,13 @@ export const LinksContainer = styled.div `
 export const FaleconoscoContainer = styled.div `
 
 @media (min-width: 800px){
+ .imagemnova{
+        background-image: url(${imgdesk});
+        background-size: cover;
+        background-position: top; 
+}
  
+
 .deixar-maior{
     margin-top: 12rem;
     height: 30rem;
@@ -891,10 +909,12 @@ export const FaleconoscoContainer = styled.div `
         height: 5rem;
     }
     }
+
+
 }
 
     main {
-        background-image: url(${imgdesk});
+        background-image: url(${img});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 

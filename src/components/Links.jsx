@@ -8,7 +8,7 @@ import  Header from "../pages/Header"
 export function Links() {
     return (
     <LinksContainer>
-      <main>
+      <main class="imagemnova">
         <Header></Header>
         <section>
           <div>

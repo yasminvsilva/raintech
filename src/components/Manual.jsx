@@ -19,7 +19,7 @@ export function Manual() {
 
     return (
     <ManualContainer>
-      <main>
+      <main class="imagemnova">
         <Header></Header>
         <section>
           <div>

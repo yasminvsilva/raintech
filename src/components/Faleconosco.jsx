@@ -8,7 +8,7 @@ import  Header from "../pages/Header"
 export function Faleconosco() {
     return (
     <FaleconoscoContainer>
-      <main>
+      <main class="imagemnova">
         <Header></Header>
         <section>
           <div>
