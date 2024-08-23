@@ -14,7 +14,7 @@ import  Header from "../pages/Header"
 export function Agente() {
     return (
     <AgenteContainer>
-      <main>
+      <main class="imagemnova">
         <Header></Header>
         <section>
           <div>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import img from '../assets/fundomobilepng.png';
 import imgredes from '../assets/fundoredes.png';
+import imgdesk from '../assets/fund0.png'
 
 
 export const HomeContainer = styled.div `
@@ -133,6 +134,10 @@ export const HomeContainer = styled.div `
 @media (min-width: 800px) {
         main {
             height: 100%;
+          
+        background-image: url(${imgdesk});
+        background-position: top; 
+    
         }
 
         h1 {
@@ -328,7 +333,7 @@ header img {
 export const ManualContainer = styled.div `
 
 main {
-        background-image: url(${img});
+        background-image: url(${imgdesk});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
@@ -358,6 +363,7 @@ main {
         align-items: center;
         height: 50vh;
         position: relative;
+        
         
     }
 
@@ -412,6 +418,7 @@ main {
 
 @media (min-width: 800px) {
 
+
     h1 {
         font-size: 7rem;
     }
@@ -451,6 +458,10 @@ main {
 export const MateriaisContainer = styled.div `
 
 @media (min-width: 800px) {
+    .imgnova{
+        background-image: url(${imgdesk});
+        background-position: top;
+    }
     .c1 {
         display: grid;
         grid-template-columns: repeat(4, 1fr); 
@@ -461,8 +472,6 @@ export const MateriaisContainer = styled.div `
         margin-inline: auto;
         justify-content: center;
         }
-  
-
     }
 
     @media (min-width: 500px) {
@@ -610,7 +619,13 @@ export const AgenteContainer = styled.div `
 @media (min-width: 800px) {
     main{
     height:100%;
+    
 }
+
+.imagemnova{
+        background-image: url(${imgdesk});
+        background-position: top;
+    }
     
 
 .nos img{
@@ -788,7 +803,7 @@ export const LinksContainer = styled.div `
 }
 }
     main {
-        background-image: url(${img});
+        background-image: url(${imgdesk});
         background-size: cover;
         background-position: top; 
         background-repeat: no-repeat;
@@ -879,7 +894,7 @@ export const FaleconoscoContainer = styled.div `
 }
 
     main {
-        background-image: url(${img});
+        background-image: url(${imgdesk});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 

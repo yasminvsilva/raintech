@@ -21,7 +21,7 @@ import  Header from "../pages/Header"
 export function Materiais() {
     return (
     <MateriaisContainer>
-      <main>
+      <main class="imgnova">
         <Header></Header>
         <section>
           <div>
