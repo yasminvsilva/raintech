@@ -864,6 +864,19 @@ export const LinksContainer = styled.div `
 `
 export const FaleconoscoContainer = styled.div `
 
+@media (min-width: 800px){
+ 
+.deixar-maior{
+    margin-top: 12rem;
+    height: 30rem;
+
+    .botaoenviar{
+        width: 20rem;
+        height: 5rem;
+    }
+    }
+}
+
     main {
         background-image: url(${img});
         background-size: cover; 
@@ -879,7 +892,17 @@ export const FaleconoscoContainer = styled.div `
         color: ${props => props.theme.textColor};
         text-align: center;
         margin-top: 3.25rem;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        color: ${props => props.theme.subtextColor};
+        text-align: center;
+        margin-bottom: 11rem;
+        opacity: 0.7;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .botoes {
@@ -904,8 +927,13 @@ export const FaleconoscoContainer = styled.div `
             justify-content: center;
             margin-inline:auto;
             margin-top: 2.5rem;
+            margin-bottom: 11rem;
             border-radius: 3rem;
         }
+
+
+
+
 
     .container_redes {
         width: 100%;             
@@ -926,9 +954,9 @@ export const FaleconoscoContainer = styled.div `
 
         p {
             color: ${props => props.theme.textColor};
-            text-align: center;
-            margin-top: -1rem;
-            font-size: 1.6rem;
+        text-align: center;
+        margin-top: -1rem;
+        font-size: 1.6rem;
         }
 
     .redes_img {
