@@ -4,6 +4,56 @@ import img from '../assets/fundomobilepng.png';
 import imgredes from '../assets/fundoredes.png';
 import imgdesk from '../assets/fund0.png'
 
+
+export const MenuMobile = styled.div `
+    div{
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 1rem;
+        height: 5rem;
+    }
+
+    button{
+        top: 50%;
+        margin-left: 30rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    ::before {
+        content: "";
+        position: fixed;
+        width: 100vw;
+        height: calc(100vh - 5rem);
+        top: 5rem;
+        left: 0;
+        z-index: -1;
+        display: ${props => props.abrir === true ? "block" : "none"};
+    }
+
+    nav{
+        background: #fff;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 20rem;
+        height: calc(100vh - 5rem);
+        text-align: center;
+
+        position: fixed;
+        right: ${props => props.abrir === true ? "0" : "-20rem"};
+
+        transition: .5s;
+        z-index: 999;
+
+
+    }
+`
+
 export const HomeContainer = styled.div `
  
 
