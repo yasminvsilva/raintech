@@ -20,7 +20,7 @@ border: none;
 
     button{
         border: none;
-        margin-left: 31rem;
+        margin-left: 32rem;
         margin-top: 1rem;
         border: none;
         background: none;
