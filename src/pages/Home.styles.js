@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 import img from '../assets/fundomobilepng.png';
 import imgredes from '../assets/fundoredes.png';
-import imgdesk from '../assets/fund0.png'
+import imgdesk from '../assets/fund00000.jpg'
 
 
 export const MenuMobile = styled.div `
+
+
     div{
         background: none;
         display: flex;
@@ -13,7 +15,7 @@ export const MenuMobile = styled.div `
         justify-content: space-between;
         padding-inline: 1rem;
         height: 5rem;
-    }
+    
 
     button{
         top: 50%;
@@ -27,11 +29,15 @@ export const MenuMobile = styled.div `
         content: "";
         position: fixed;
         width: 100vw;
-        height: calc(100vh - 5rem);
+        height: 100vh;
         top: 5rem;
         left: 0;
         z-index: -1;
         display: ${props => props.abrir === true ? "block" : "none"};
+    }}
+
+    @media (min-width: 768px) {
+        display: none;
     }
 
     nav{
@@ -41,7 +47,7 @@ export const MenuMobile = styled.div `
         flex-direction: column;
         gap: 1rem;
         width: 20rem;
-        height: calc(100vh - 5rem);
+        height: 100vh;
         text-align: center;
 
         position: fixed;
@@ -50,7 +56,13 @@ export const MenuMobile = styled.div `
         transition: .5s;
         z-index: 999;
 
+        border-radius: 1rem;
 
+
+    }
+
+    a{
+        color: black;
     }
 `
 
@@ -64,6 +76,7 @@ export const HomeContainer = styled.div `
         background-size: cover; 
         background-position: top;
         background-repeat: no-repeat; 
+        background-attachment: fixed;
         height: 100%; 
         margin: 0;
         padding: 0;
@@ -188,6 +201,7 @@ export const HomeContainer = styled.div `
           
         background-image: url(${imgdesk});
         background-position: top; 
+
     
         }
 
@@ -341,8 +355,8 @@ header img {
     }
 
     .b_cont {
-        background-color: ${props => props.theme.buttonColor};
-        color: ${props => props.theme.textColor};
+        background-color: white;
+        color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -392,6 +406,7 @@ main {
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
+        background-attachment: fixed;
         height: 100%; 
         margin: 0;
         padding: 0;
@@ -553,6 +568,7 @@ main {
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
+        background-attachment: fixed;
         height: fit-content; 
         max-height: fit-content;
         margin: 0;
@@ -735,6 +751,7 @@ main {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
 }
@@ -874,6 +891,7 @@ main {
         background-size: cover;
         background-position: top; 
         background-repeat: no-repeat;
+        background-attachment: fixed;
         height: 100%;
         margin: 0;
         padding: 0;
@@ -976,6 +994,7 @@ export const FaleconoscoContainer = styled.div `
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
+        background-attachment: fixed;
         height: 100%; 
         margin: 0;
         padding: 0;
@@ -1011,6 +1030,7 @@ export const FaleconoscoContainer = styled.div `
     .nomenome, .emailemail, .mensagem {
         padding:1rem;
         border-radius: 1rem;
+        color: white;
     }
 
         .botaoenviar{
@@ -1060,5 +1080,8 @@ export const FaleconoscoContainer = styled.div `
         margin-bottom: 1.5rem;
     }
 }
+
+
+
 
 `

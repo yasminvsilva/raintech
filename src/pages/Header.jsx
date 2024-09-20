@@ -1,5 +1,4 @@
 import iconIcon from "../assets/icon.svg"
-import iconHamburguer from "../assets/hamburguer.svg"
 
 import { List, X } from "@phosphor-icons/react"
 
@@ -12,7 +11,7 @@ export default function Header() {
 
     function handleAbrirFecharMenu() {
         if(abrirMenu === true){
-            setAbrirmenu(false)
+            setAbrirMenu(false)
             return
         }
 
@@ -36,10 +35,6 @@ export default function Header() {
             </nav>
             <div className="b_cont"><a href="/Contatenos" onCLick={(e) => handleNavegation(e, '/Contatenos')}>Contate-nos</a></div>
 
-
-
-
-
             <MenuMobile abrir={abrirMenu}>
             <div>
                 <button onClick={handleAbrirFecharMenu}>
@@ -52,6 +47,7 @@ export default function Header() {
             <a href="/Tutorial" onCLick={(e) => handleNavegation(e,'/Tutorial')}>Funcionamento</a>
             <a href="/Componentes" onCLick={(e) => handleNavegation(e,'/Componentes')}>Componentes</a>
             <a href="/Contatenos" onCLick={(e) => handleNavegation(e, '/Contatenos')}>Contate-nos</a>
+            <a href="/Referencias" onCLick={(e) => handleNavegation(e, '/Referencias')}>Referências</a>
             </nav>
         </MenuMobile>
 
