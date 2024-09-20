@@ -19,7 +19,7 @@ export const MenuMobile = styled.div `
 
     button{
         top: 50%;
-        margin-left: 35rem;
+        margin-left: 32rem;
         border: none;
         background: none;
         cursor: pointer;
