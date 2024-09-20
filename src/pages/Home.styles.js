@@ -6,9 +6,10 @@ import imgdesk from '../assets/fund00000.jpg'
 
 
 export const MenuMobile = styled.div `
-
+border: none;
 
     div{
+        border: none;
         background: none;
         display: flex;
         align-items: center;
@@ -18,8 +19,8 @@ export const MenuMobile = styled.div `
     
 
     button{
+        border: none;
         margin-top: 1rem;
-        margin-left: 32rem;
         border: none;
         background: none;
         cursor: pointer;
@@ -27,6 +28,7 @@ export const MenuMobile = styled.div `
 
     ::before {
         content: "";
+        border: none;
         position: fixed;
         width: 100vw;
         height: 100vh;
@@ -41,6 +43,7 @@ export const MenuMobile = styled.div `
     }
 
     nav{
+        border: none;
         background: #fff;
         padding-top: 2rem;
         display: flex;
@@ -1030,7 +1033,6 @@ export const FaleconoscoContainer = styled.div `
     .nomenome, .emailemail, .mensagem {
         padding:1rem;
         border-radius: 1rem;
-        color: white;
     }
 
         .botaoenviar{

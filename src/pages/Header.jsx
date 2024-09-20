@@ -36,9 +36,9 @@ export default function Header() {
             <div className="b_cont"><a href="/Contatenos" onCLick={(e) => handleNavegation(e, '/Contatenos')}>Contate-nos</a></div>
 
             <MenuMobile abrir={abrirMenu}>
-            <div>
+            <div className="mobile">
                 <button onClick={handleAbrirFecharMenu}>
-                    {abrirMenu === true ? <X size={32} weight="bold" /> : <List size={32} weight="bold" />}
+                    {abrirMenu === true ? <X size={32} weight="bold" border="none"/> : <List size={32} weight="bold" />}
                 </button>
             </div>
 
