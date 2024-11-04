@@ -73,8 +73,6 @@ border: none;
 export const HomeContainer = styled.div `
  
 
-
-
     main {
         background-image: url(${img});
         background-size: cover; 
@@ -84,8 +82,6 @@ export const HomeContainer = styled.div `
         height: 100%; 
         margin: 0;
         padding: 0;
-
-        
     }
 
     h1 {
@@ -163,6 +159,7 @@ export const HomeContainer = styled.div `
         padding: 1rem;
         margin-inline: auto;
     }
+    
     .imagesContainer {
         display: flex;               
         justify-content: center;   
@@ -230,9 +227,6 @@ export const HomeContainer = styled.div `
             margin: 5rem;
         }
 
-        /* */
-
-
         .p_benef {
             margin-bottom: 0;
         }
@@ -254,7 +248,7 @@ export const HomeContainer = styled.div `
     }
 
 
-        /* */
+    
         
         .b1, .b2, .b3, .b4, .b5 {
             background-color: ${props => props.theme.buttonColor};
@@ -408,12 +402,13 @@ export const ManualContainer = styled.div `
 main {
         background-image: url(${img});
         background-size: cover; 
-        background-position: top; 
+        background-position: top;
         background-repeat: no-repeat; 
         background-attachment: fixed;
         height: 100%; 
         margin: 0;
         padding: 0;
+        width: 190rem;
     }
 
     h1 {
@@ -498,11 +493,11 @@ main {
         background-position: top; 
 }
     h1 {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     .videozinho {
@@ -577,6 +572,7 @@ main {
         max-height: fit-content;
         margin: 0;
         padding: 0;
+        width: 190rem;
     }
 
     h1 {
@@ -1002,6 +998,7 @@ export const FaleconoscoContainer = styled.div `
         height: 100%; 
         margin: 0;
         padding: 0;
+        width: 190rem;
     }
 
     h1 {

@@ -35,6 +35,13 @@ export function Manual() {
           </div>
           </div>
 
+          <div class="videozinho">
+          <video src={videoTutorial} type="video/mp4" height={200} width={300} ref={videoRef} poster="https://png.pngtree.com/thumb_back/fw800/background/20230611/pngtree-raindrops-on-a-car-window-during-night-time-or-rain-image_2915186.jpg" > </video>
+          <div class="grid-btn">
+          <button id="desaparecer" class="play" onClick={handlePlay}>▶ Assista ao vídeo</button>
+          </div>
+          </div>
+
           
 
           <div className="container_redes">
@@ -49,6 +56,8 @@ export function Manual() {
         
         
       </main>
+
+      
     </ManualContainer>
    )
  }
