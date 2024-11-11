@@ -36,8 +36,9 @@ export function Manual() {
           </div>
           </div>
 
-          <iframe class="videoyoutube" height="240" width="412" src="https://www.youtube.com/embed/__xzG0KS2No?si=cjefdQ2rDcNh9fnc&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="videoyoutube" width="412" height="240" src="https://www.youtube.com/embed/__xzG0KS2No?si=cjQx1sTrand4wZ8f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           
+          <iframe class="videoyoutube" width="412" height="240" src="https://www.youtube.com/embed/RfDW7Kpl_Es?si=LMbzmSFxQmodLEHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
           <div className="container_redes">
             <div className="redes_img">
