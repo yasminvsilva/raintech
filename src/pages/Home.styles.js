@@ -411,6 +411,16 @@ main {
         width: 190rem;
     }
 
+.videoyoutube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+    margin-left: 74.5rem;
+    margin-bottom: 15rem;
+    width: 200;
+}    
+
     h1 {
         font-size: 3.75rem;
         color: ${props => props.theme.textColor};
@@ -486,6 +496,10 @@ main {
 
 
 @media (min-width: 800px) {
+
+    main {
+        height: 100%;
+    }
 
 .imagemnova{
         background-image: url(${imgdesk});
@@ -970,7 +984,7 @@ export const FaleconoscoContainer = styled.div `
         background-image: url(${imgdesk});
         background-size: cover;
         background-position: top; 
-        height:100%;
+        height:100rem;
 }
  
 
@@ -1019,42 +1033,47 @@ export const FaleconoscoContainer = styled.div `
         margin-right: 1rem;
     }
 
-    .botoes {
-        display:flex;
-        flex-direction: column;
-        width: 20rem;
-        margin-inline:auto;
-        gap: 1.5rem;
-
-    }
-
-    .nomenome, .emailemail, .mensagem {
-        padding:1rem;
+    .container_cont {
+        width: 15%;               
+        max-width: 1000px;        
+        margin: 0 auto;           
+        margin-bottom: 5rem;
+        padding: 50px;            
+        background-color: ${props => props.theme.containerColor}; 
+        color: ${props => props.theme.textColor};
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+        text-align: center; /* Centraliza o conteúdo dentro do container */
+        position: relative;
         border-radius: 1rem;
+        margin-top: 22rem;
+        margin-bottom: 23rem;
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
     }
 
-        .botaoenviar{
-            background-color: ${props => props.theme.buttonColor};
-            width: 10rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-inline:auto;
-            margin-top: 2.5rem;
-            margin-bottom: 11rem;
-            border-radius: 3rem;
-        }
+    .emailduda  {
+        height: auto; /* Mantém a proporção da imagem */
+    max-width: 20%; /* Limita a imagem a 50% da largura do container */
+    border-radius: 8px;
+    position: absolute;
+    top: -13%; /* Move a imagem 20% para fora da borda superior do container */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que o centro da imagem coincida com o centro do container */
+        
+    }
 
-
-
-
+    a {
+        color: ${props => props.theme.textColor};
+    }
 
     .container_redes {
-        width: 100%;             
-        margin: 0 auto;           
+        width: 100%; 
         margin-top: 4rem;
-        margin-bottom: -2rem;
-        padding: 3.125rem;            
+        padding: 5rem;
         background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
@@ -1068,18 +1087,18 @@ export const FaleconoscoContainer = styled.div `
 
         p {
             color: ${props => props.theme.textColor};
-        text-align: center;
-        margin-top: -1rem;
-        font-size: 1.6rem;
+            text-align: center;
+            margin-top: -1rem;
+            font-size: 1.6rem;
         }
 
     .redes_img {
-        display: flex;
-        justify-content: center;
+        display: flex;               /* Define como flexbox */
+        justify-content: center;     /* Centraliza as imagens horizontalmente */
         gap: 20px;
-        margin-bottom: 1.5rem;
-    }
-}
+        margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+}}
+
 
 
 

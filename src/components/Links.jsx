@@ -41,9 +41,10 @@ export function Links() {
 
           <div className="container_redes">
             <div className="redes_img">
-              <img src={iconInstagram} alt="" />
-              <img src={iconGithub} alt="f" />
-              <img src={iconTwitter} alt="f" />
+              <a href="https://www.instagram.com/_raintech/">
+              <img src={iconInstagram} alt="ícone do Instagram" /></a>
+              <a href="https://github.com/lilianjc837"><img src={iconGithub} alt="ícone do Github" /></a>
+              <a href="https://x.com/EcosyncEdutec?t=OQWviriYPTYZ_rkCLRXEfw&s=09"><img src={iconTwitter} alt="ícone do Twitter" /></a>
             </div>
             <p> Nos acompanhe nas <br /> redes sociais!</p>
           </div>

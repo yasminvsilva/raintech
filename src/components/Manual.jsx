@@ -15,6 +15,7 @@ export function Manual() {
   const handlePlay = () => {
     videoRef.current.play();
   };
+
     
 
     return (
@@ -35,20 +36,15 @@ export function Manual() {
           </div>
           </div>
 
-          <div class="videozinho">
-          <video src={videoTutorial} type="video/mp4" height={200} width={300} ref={videoRef} poster="https://png.pngtree.com/thumb_back/fw800/background/20230611/pngtree-raindrops-on-a-car-window-during-night-time-or-rain-image_2915186.jpg" > </video>
-          <div class="grid-btn">
-          <button id="desaparecer" class="play" onClick={handlePlay}>▶ Assista ao vídeo</button>
-          </div>
-          </div>
-
+          <iframe class="videoyoutube" height="240" width="412" src="https://www.youtube.com/embed/__xzG0KS2No?si=cjefdQ2rDcNh9fnc&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           
 
           <div className="container_redes">
             <div className="redes_img">
-              <img src={iconInstagram} alt="ícone do Instagram" />
-              <img src={iconGithub} alt="ícone do Github" />
-              <img src={iconTwitter} alt="ícone do Twitter" />
+              <a href="https://www.instagram.com/_raintech/">
+              <img src={iconInstagram} alt="ícone do Instagram" /></a>
+              <a href="https://github.com/lilianjc837"><img src={iconGithub} alt="ícone do Github" /></a>
+              <a href="https://x.com/EcosyncEdutec?t=OQWviriYPTYZ_rkCLRXEfw&s=09"><img src={iconTwitter} alt="ícone do Twitter" /></a>
             </div>
             <p> Nos acompanhe nas <br /> redes sociais!</p>
           </div>
