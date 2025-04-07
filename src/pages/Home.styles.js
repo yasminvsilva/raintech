@@ -1,20 +1,87 @@
-import styled from "styled-components"
+import styled from "styled-components";
+
+import img from '../assets/fundomobilepng.png';
+import imgredes from '../assets/fundoredes.png';
+import imgdesk from '../assets/fund00000.jpg'
 
 
-export const HomeContainer = styled.div `
+export const MenuMobile = styled.div `
+border: none;
+
+    div{
+        border: none;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 1rem;
+        height: 5rem;
     
 
+    button{
+        border: none;
+        margin-left: 32rem;
+        margin-top: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    ::before {
+        content: "";
+        border: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 5rem;
+        left: 0;
+        z-index: -1;
+        display: ${props => props.abrir === true ? "block" : "none"};
+    }}
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    nav{
+        border: none;
+        background: #fff;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 20rem;
+        height: 100vh;
+        text-align: center;
+
+        position: fixed;
+        right: ${props => props.abrir === true ? "0" : "-20rem"};
+
+        transition: .5s;
+        z-index: 999;
+
+        border-radius: 1rem;
+
+
+    }
+
+    a{
+        color: black;
+    }
+`
+
+export const HomeContainer = styled.div `
+ 
+
     main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; 
         background-position: top;
         background-repeat: no-repeat; 
-        height: fit-content; 
+        background-attachment: fixed;
+        height: 100%; 
         margin: 0;
         padding: 0;
-        max-height: 150rem;
-
-        
     }
 
     h1 {
@@ -48,7 +115,7 @@ export const HomeContainer = styled.div `
 
         .t_benef {
             margin-top: 1.5rem;
-            margin-bottom: 0.25rem;
+            margin-bottom: 1.25rem;
 
         }
 
@@ -60,6 +127,10 @@ export const HomeContainer = styled.div `
             margin-bottom: 1rem;
             font-size: 1.25rem;
         }
+    }
+
+    .arrumarborda{
+        text-align: justify;
     }
 
     a {
@@ -91,6 +162,10 @@ export const HomeContainer = styled.div `
     .imagesContainer {
         display: flex;               /* Define como flexbox */
         justify-content: center;     /* Centraliza as imagens horizontalmente */
+    
+    .imagesContainer {
+        display: flex;               
+        justify-content: center;
         gap: 35px; 
         margin-bottom: 2.5rem;
         height: 5.5rem;
@@ -106,6 +181,16 @@ export const HomeContainer = styled.div `
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
+        width: 100%;
+        max-width: 10000px; 
+        margin: 0 auto;
+        margin-top: 4rem;
+        padding: 3.125rem;
+        background-image: url(${imgredes});
+        background-color: ${props => props.theme.containerRedes};
+        background-repeat: no-repeat;
+        background-size: cover;
+        
         img {
             width: 3rem;
             height: auto;
@@ -123,8 +208,21 @@ export const HomeContainer = styled.div `
 }}
 
     @media (min-width: 800px) {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 1.5rem;
+}}
+
+
+@media (min-width: 800px) {
         main {
-            height: 250vh;
+            height: 100%;
+          
+        background-image: url(${imgdesk});
+        background-position: top; 
+
+    
         }
 
         h1 {
@@ -147,6 +245,29 @@ export const HomeContainer = styled.div `
             font-size: 2rem;
             margin: 5rem;
         }
+
+        .p_benef {
+            margin-bottom: 0;
+        }
+
+        .t_benef {
+            margin-top: 1.5rem;
+            margin-bottom: 0.25rem;
+
+        }
+
+        .obj {
+            margin-top: 1.5rem;
+        }
+
+    .arrumarborda{
+        margin-left: 17.5rem;
+        margin-right: 17.2rem;
+        text-align: justify;
+    }
+
+
+    
         
         .b1, .b2, .b3, .b4, .b5 {
             background-color: ${props => props.theme.buttonColor};
@@ -167,6 +288,8 @@ export const HomeContainer = styled.div `
         .imagesContainer {
         display: flex;               /* Define como flexbox */
         justify-content: center;     /* Centraliza as imagens horizontalmente */
+        display: flex;
+        justify-content: center; 
         gap: 35px; 
         margin-bottom: 2.5rem;
         height: 5.5rem;
@@ -179,6 +302,12 @@ export const HomeContainer = styled.div `
         margin-top: 4rem;
         padding: 3.125rem;            /* Espaço interno para os elementos */
         background-image: url('../src/assets/fundoredes.png');
+        width: 100%;
+        max-width: 10000px;
+        margin: 0 auto;
+        margin-top: 4rem;
+        padding: 3.125rem;
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
@@ -196,33 +325,41 @@ export const HomeContainer = styled.div `
         justify-content: center;     /* Centraliza as imagens horizontalmente */
         gap: 20px;
         margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 1.5rem;
 }
     }
 }
 `
 export const HeaderContainer = styled.div `
+
+
+
+
 header {
     position: relative;
     width: 100%;
-    height: 60px; /* Ajuste a altura do cabeçalho conforme necessário */
+    height: 60px;
 }
 
 header img {
     position: absolute;
-    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 30px;
+    height: auto;
 }
 
 .esquerda {
     top: 50%;
-    left: 15px; /* Ajuste a distância do ícone da borda esquerda */
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    left: 15px;
+    transform: translateY(-50%);
 }
 
 .direita {
     top: 50%;
-    right: 15px; /* Ajuste a distância do ícone da borda direita */
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    right: 15px;
+    transform: translateY(-50%);
 }
 
 .b_cont {
@@ -247,8 +384,8 @@ header img {
     }
 
     .b_cont {
-        background-color: ${props => props.theme.buttonColor};
-        color: ${props => props.theme.textColor};
+        background-color: white;
+        color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -294,14 +431,26 @@ header img {
 export const ManualContainer = styled.div `
 
 main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; 
-        background-position: top; 
+        background-position: top;
         background-repeat: no-repeat; 
+        background-attachment: fixed;
         height: 100%; 
         margin: 0;
         padding: 0;
+        width: 190rem;
     }
+
+.videoyoutube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+    margin-left: 74.5rem;
+    margin-bottom: 15rem;
+    width: 200;
+}    
 
     h1 {
         font-size: 3.75rem;
@@ -324,6 +473,7 @@ main {
         align-items: center;
         height: 50vh;
         position: relative;
+        
         
     }
 
@@ -349,7 +499,7 @@ main {
         margin: 0 auto;           
         margin-top: 4rem;
         padding: 3.125rem;          
-        background-image: url('../src/assets/fundoredes.png');
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover;
@@ -378,12 +528,21 @@ main {
 
 @media (min-width: 800px) {
 
+    main {
+        height: 100%;
+    }
+
+.imagemnova{
+        background-image: url(${imgdesk});
+        background-size: cover;
+        background-position: top; 
+}
     h1 {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     .videozinho {
@@ -405,7 +564,6 @@ main {
         position: absolute;
         align-items: center;
         align-content: center;
-        height: 3rem;
         width: 12rem;
         font-size: 1rem;
     } 
@@ -418,6 +576,10 @@ main {
 export const MateriaisContainer = styled.div `
 
 @media (min-width: 800px) {
+    .imgnova{
+        background-image: url(${imgdesk});
+        background-position: top;
+    }
     .c1 {
         display: grid;
         grid-template-columns: repeat(4, 1fr); 
@@ -428,8 +590,6 @@ export const MateriaisContainer = styled.div `
         margin-inline: auto;
         justify-content: center;
         }
-
-       
     }
 
     @media (min-width: 500px) {
@@ -448,14 +608,16 @@ export const MateriaisContainer = styled.div `
 }
 
 main {
-        background-image: url('../src/assets/fundomobilepng.png');
+        background-image: url(${img});
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
+        background-attachment: fixed;
         height: fit-content; 
         max-height: fit-content;
         margin: 0;
         padding: 0;
+        width: 190rem;
     }
 
     h1 {
@@ -544,7 +706,7 @@ main {
         margin-top: 4rem;
         margin-bottom: -15rem;
         padding: 3.125rem;          
-        background-image: url('../src/assets/fundoredes.png');
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
@@ -572,138 +734,180 @@ main {
 `
 export const AgenteContainer = styled.div `
 
+
       
-      @media (min-width: 800px) {
-            height:88rem ;
-        }
+@media (min-width: 800px) {
+    main{
+    height:100%;
+    
+}
 
-
-        @media (min-width: 300px) {
-            height:118rem ;
-        }
-
-        @media (min-width: 500px) {            
-            height:100rem ;
-        }
-
-
-    main {
-
-        width: 100%;
-        height: 100%;
-        background-image: url('../src/assets/fundomobilepng.png');
-        background-size: cover;
+.imagemnova{
+        background-image: url(${imgdesk});
         background-position: top;
-        background-repeat: no-repeat;
-        position: relative;
-        overflow: hidden;
     }
+    
+
+.nos img{
+    width: 20rem;
+    margin-top: 0;
+    display: block;
+    margin: 0 auto;
+    height: 20rem;
+}
+ 
+ .textonos p{
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+ }
+
+ h1 {
+    font-size: 8rem;
+    color: ${props => props.theme.textColor};
+    text-align: center;
+    margin-top: 3.25rem;
+    max-height:10rem;
+}
+
+h2 {
+    font-size: 5rem;
+    color: ${props => props.theme.subtextColor};
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.7
+}
+
+}
+
+@media (min-width: 300px) {
+    height:100% ;
+}
+
+@media (min-width: 500px) {            
+    height:100% ;
+}
+
+main {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(${img});
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
 
 h5{
     text-align: center;
 }
 
-    h1 {
-        font-size: 4rem;
-        color: ${props => props.theme.textColor};
-        text-align: center;
-        margin-top: 3.25rem;
-        max-height:10rem;
-    }
+h1 {
+    font-size: 4rem;
+    color: ${props => props.theme.textColor};
+    text-align: center;
+    margin-top: 3.25rem;
+    max-height:10rem;
+}
 
-    h2 {
-        font-size: 1.5rem;
-        color: ${props => props.theme.subtextColor};
-        text-align: center;
-        margin-bottom: 2rem;
-        opacity: 0.7
-    }
+h2 {
+    font-size: 1.5rem;
+    color: ${props => props.theme.subtextColor};
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.7
+}
 
-   img {
+.gota_img img{
+    width: 3rem;
+    margin-top: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+p {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    text-align: justify;
+}
+
+.descricao {
+    display: flex;               
+    justify-content: center;     
+    gap: 2rem; 
+    height: 1rem;
+    margin-bottom: 28rem;
+}
+
+
+.nos img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+
+.nome_l {
+    color: ${props => props.theme.textColor};
+    font-size: 1.5rem;
+    margin-left: 1.3rem;
+    margin-top: 0.5rem
+}
+   
+.nos p {
+    margin-top: 0;
+    font-size: 1rem;
+    color: ${props => props.theme.subtextColor};
+    margin-bottom: 5rem;
+}
+
+.container_redes {
+    width: 100%;   
+    height: 15rem;
+    max-width: 10000px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 2.825rem;
+    background-image: url(${imgredes});
+    background-color: ${props => props.theme.containerRedes};
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    img {
         width: 3rem;
-        margin-top: 0;
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
         height: auto;
-   }
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        gap: 4rem;
+        }
 
     p {
-        margin-top: 2rem;
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        justify-content: center;
-        text-align: justify;
-    }
-
-    .descricao {
-        display: flex;               
-        justify-content: center;     
-        gap: 2rem; 
-        height: 1rem;
-        margin-bottom: 28rem;
-    }
-
-
-    .nos img {
-        width: 10rem;
-        height: auto;
-        border-radius: 1rem;
-        margin-top: 5rem;
-    }
-
-    .nome_l {
         color: ${props => props.theme.textColor};
-        font-size: 1.5rem;
-        margin-left: 1.3rem;
-        margin-top: 0.5rem
+        text-align: center;
+        margin-top: -1rem;
+        font-size: 1.6rem;
     }
-   
-    .nos p {
-        margin-top: 0;
-        font-size: 1rem;
-        color: ${props => props.theme.subtextColor};
-        margin-bottom: 5rem;
-    }
-
-    
-
-    .container_redes {
-        width: 100%;             /* Largura máxima do container */
-        margin: 0 auto;           /* Centraliza o container na página */
-        margin-top: 4rem;
-        margin-bottom: 15rem;
-        padding: 4.825rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
-        background-color: ${props => props.theme.containerRedes};
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-
-        img {
-            width: 3rem;
-            height: auto;
-            margin-bottom: 1rem;
-            gap: -4rem;
-        }
-
-        p {
-            color: ${props => props.theme.textColor};
-            text-align: center;
-            margin-top: -1rem;
-            font-size: 1.6rem;
-        }
     }    
 
-    .redes_img {
-        display: flex;               
-        justify-content: center;     
-        gap: 2px;
-        margin-bottom: 1.5rem;  
-        margin-right: 9.2rem;      
-        margin-left: 9.2rem; 
+.redes_img {
+    display: flex;               
+    justify-content: center;     
+    gap: 2px;
+    margin-bottom: 1.5rem;  
+    margin-right: 9.2rem;      
+    margin-left: 11rem; 
     }
 
 `
@@ -715,9 +919,34 @@ export const LinksContainer = styled.div `
         background-position: top; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita repetição da imagem */
         height: 100%; /* Define a altura do body como 100% da viewport */
+@media (min-width: 800px){
+    .imagemnova {
+        background-image: url(${imgdesk});
+        background-position: top; 
+    }
+
+
+.referencias-links{
+    margin-left: 30rem;
+    margin-right: 30rem;
+
+    .b_ref{
+        width: 30rem;
+    }
+}
+
+}
+
+main {
+        background-image: url(${img});
+        background-size: cover;
+        background-position: top; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
         margin: 0;
         padding: 0;
-    }
+}
 
     h1 {
         font-size: 4rem;
@@ -740,7 +969,7 @@ export const LinksContainer = styled.div `
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 10rem;
+        width: 33.7rem;
         height: 4rem;
         border-radius: 1rem;
         margin: 2rem;
@@ -756,9 +985,11 @@ export const LinksContainer = styled.div `
     .container_redes {
         width: 100%;    /* Largura máxima do container */
         margin: 0 auto;           /* Centraliza o container na página */
+        width: 100%; 
+        margin: 0 auto;
         margin-top: 4rem;
-        padding: 3.125rem;            /* Espaço interno para os elementos */
-        background-image: url('../src/assets/fundoredes.png');
+        padding: 3.125rem;
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
@@ -787,14 +1018,44 @@ export const LinksContainer = styled.div `
 `
 export const FaleconoscoContainer = styled.div `
 
+@media (min-width: 800px){
+ .imagemnova{
+        background-image: url(${imgdesk});
+        background-size: cover;
+        background-position: top; 
+        height:100rem;
+}
+ 
+
+.deixar-maior{
+    margin-top: 20rem;
+    
+    margin-bottom: 12rem;
+    height: 30rem;
+
+    .botaoenviar{
+        width: 20rem;
+        height: 5rem;
+    }
+    }
+
+
+}
+
     main {
         background-image: url('../src/assets/fundomobilepng.png');
         background-size: cover; 
         background-position: top; 
         background-repeat: no-repeat; 
+        background-image: url(${img});
+        background-size: cover; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
         height: 100%; 
         margin: 0;
         padding: 0;
+        width: 190rem;
     }
 
     h1 {
@@ -817,6 +1078,54 @@ export const FaleconoscoContainer = styled.div `
     .nomenome, .emailemail, .mensagem {
         padding:1rem;
         border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        color: ${props => props.theme.subtextColor};
+        text-align: center;
+        margin-bottom: 11rem;
+        opacity: 0.7;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .container_cont {
+        width: 15%;               
+        max-width: 1000px;        
+        margin: 0 auto;           
+        margin-bottom: 5rem;
+        padding: 50px;            
+        background-color: ${props => props.theme.containerColor}; 
+        color: ${props => props.theme.textColor};
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+        text-align: center; /* Centraliza o conteúdo dentro do container */
+        position: relative;
+        border-radius: 1rem;
+        margin-top: 22rem;
+        margin-bottom: 23rem;
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .emailduda  {
+        height: auto; /* Mantém a proporção da imagem */
+    max-width: 20%; /* Limita a imagem a 50% da largura do container */
+    border-radius: 8px;
+    position: absolute;
+    top: -13%; /* Move a imagem 20% para fora da borda superior do container */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que o centro da imagem coincida com o centro do container */
+        
+    }
+
+    a {
+        color: ${props => props.theme.textColor};
     }
 
         .botaoenviar{
@@ -837,6 +1146,10 @@ export const FaleconoscoContainer = styled.div `
         margin-bottom: -2rem;
         padding: 3.125rem;            
         background-image: url('../src/assets/fundoredes.png');
+        width: 100%; 
+        margin-top: 4rem;
+        padding: 5rem;
+        background-image: url(${imgredes});
         background-color: ${props => props.theme.containerRedes};
         background-repeat: no-repeat;
         background-size: cover; 
@@ -859,7 +1172,10 @@ export const FaleconoscoContainer = styled.div `
         justify-content: center;     /* Centraliza as imagens horizontalmente */
         gap: 20px;
         margin-bottom: 1.5rem;                   /* Espaçamento entre as imagens (opcional) */
-    }
-}
+}}
+
+
+
+
 
 `

@@ -21,7 +21,7 @@ import  Header from "../pages/Header"
 export function Materiais() {
     return (
     <MateriaisContainer>
-      <main>
+      <main class="imgnova">
         <Header></Header>
         <section>
           <div>
@@ -104,11 +104,12 @@ export function Materiais() {
           </div>
         </div>
 
-          <div className="container_redes">
+        <div className="container_redes">
             <div className="redes_img">
-              <img src={iconInstagram} alt="ícone do Instagram" />
-              <img src={iconGithub} alt="ícone do Github" />
-              <img src={iconTwitter} alt="ícone do Twitter" />
+              <a href="https://www.instagram.com/_raintech/">
+              <img src={iconInstagram} alt="ícone do Instagram" /></a>
+              <a href="https://github.com/lilianjc837"><img src={iconGithub} alt="ícone do Github" /></a>
+              <a href="https://x.com/EcosyncEdutec?t=OQWviriYPTYZ_rkCLRXEfw&s=09"><img src={iconTwitter} alt="ícone do Twitter" /></a>
             </div>
             <p> Nos acompanhe nas <br /> redes sociais!</p>
           </div>

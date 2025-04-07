@@ -14,7 +14,7 @@ import  Header from "../pages/Header"
 export function Agente() {
     return (
     <AgenteContainer>
-      <main>
+      <main class="imagemnova">
         <Header></Header>
         <section>
           <div>
@@ -26,7 +26,7 @@ export function Agente() {
           <img src={gotas} alt="" />
           </div>
 
-          <div>
+          <div class="textonos">
             <p>Bem-vindo à página de apresentação da nossa equipe! Somos um grupo de estudantes do Centro Universitário Adventista de São Paulo (UNASP)</p>
             <p>Estamos atualmente no 3º ano do Ensino Médio, cursando o programa Técnico em Informática Integrado ao Ensino Médio. Combinando nosso interesse pela tecnologia e nosso compromisso com a sustentabilidade, trabalhamos arduamente para desenvolver e implementar um sistema eficiente de captação de água da chuva. Acreditamos que, através da inovação e do trabalho em equipe, podemos contribuir para um futuro mais sustentável.</p>
             <p>Se você tiver interesse em saber mais sobre o nosso trabalho ou quiser colaborar de alguma forma, não hesite em nos contatar. Estamos ansiosos para compartilhar nossa jornada com você!</p>
@@ -35,29 +35,30 @@ export function Agente() {
 
           <div className="descricao">
             <div className="nos">
-              <img src={lilian} alt="" />
-              <h5 clasName="nome_l">Lilian Correia</h5>
-              <h6 clasName="textinho">lilian.correia@eaportal.org</h6>
+              <img class="imagemnos" src={lilian} alt="" />
+              <h5 clasName="nome">Lilian Correia</h5>
+              <h6 clasName="textinho">licorreia@gmail.com</h6>
             </div>
 
             <div className="nos">
-              <img src={duda} alt="" />
-              <h5 clasName="nome_m">Maria Gobira</h5>
+              <img class="imagemnos" src={duda} alt="" />
+              <h5 clasName="nome">Maria Gobira</h5>
               <h6 clasName="textinho">megobira@gmail.com</h6>
             </div>
 
             <div className="nos">
-              <img src={renata} alt="" />
-              <h5 clasName="nome_r">Renata Costa</h5>
-              <h6 clasName="textinho">renascimento2106@gmail.com</h6>
+              <img class="imagemnos" src={renata} alt="" />
+              <h5 clasName="nome">Renata Costa</h5>
+              <h6 clasName="textinho">recosta@gmail.com</h6>
             </div>
           </div>
 
           <div className="container_redes">
             <div className="redes_img">
-              <img src={iconInstagram} alt="" />
-              <img src={iconGithub} alt="f" />
-              <img src={iconTwitter} alt="f" />
+              <a href="https://www.instagram.com/_raintech/">
+              <img src={iconInstagram} alt="ícone do Instagram" /></a>
+              <a href="https://github.com/lilianjc837"><img src={iconGithub} alt="ícone do Github" /></a>
+              <a href="https://x.com/EcosyncEdutec?t=OQWviriYPTYZ_rkCLRXEfw&s=09"><img src={iconTwitter} alt="ícone do Twitter" /></a>
             </div>
             <p> Nos acompanhe nas <br /> redes sociais!</p>
           </div>

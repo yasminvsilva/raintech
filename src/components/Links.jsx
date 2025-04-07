@@ -8,7 +8,7 @@ import  Header from "../pages/Header"
 export function Links() {
     return (
     <LinksContainer>
-      <main>
+      <main class="imagemnova">
         <Header></Header>
         <section>
           <div>
@@ -16,7 +16,7 @@ export function Links() {
             <h2></h2>
           </div>
 
-          <div>
+          <div class="referencias-links">
             <p>MEDRI, Rívea; MINILLO, Alessandro; GERTRUDES, Eliana; FERREIRA, Heloiza; TANGERINO, Edson. Uso de filtros de carvão ativado granular associado a microrganismos para remoção de fármacos no tratamento de água de abastecimento. Scielo Brasil, 2016. Acesso em: 13 de mar. de 2024.</p>
             <div className="b_ref"><a href="https://www.scielo.br/j/esa/a/qShs6gCcN46bLKrnCB9Ljkr/?lang=pt#">Disponível em:</a></div>
           
@@ -41,9 +41,10 @@ export function Links() {
 
           <div className="container_redes">
             <div className="redes_img">
-              <img src={iconInstagram} alt="" />
-              <img src={iconGithub} alt="f" />
-              <img src={iconTwitter} alt="f" />
+              <a href="https://www.instagram.com/_raintech/">
+              <img src={iconInstagram} alt="ícone do Instagram" /></a>
+              <a href="https://github.com/lilianjc837"><img src={iconGithub} alt="ícone do Github" /></a>
+              <a href="https://x.com/EcosyncEdutec?t=OQWviriYPTYZ_rkCLRXEfw&s=09"><img src={iconTwitter} alt="ícone do Twitter" /></a>
             </div>
             <p> Nos acompanhe nas <br /> redes sociais!</p>
           </div>

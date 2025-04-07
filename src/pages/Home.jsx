@@ -11,6 +11,7 @@ import Header from "./Header"
 import { HomeContainer } from "./Home.styles"
 
 export function Home() {
+
   return (
     <HomeContainer>
       <main>
@@ -27,11 +28,13 @@ export function Home() {
               <img src={iconRain} alt="ícone de um previsão de chuva" />
               <img src={iconStorm} alt="ícone de previsão de tempestade" />
             </div>
-            <p>Nosso produto é a solução para quem busca água limpa para utilizar em tarefas domiciliar. Nosso filtro de água de última geração utiliza tecnologia de ponta para remover impurezas e micro-organismos, garantindo água tratada.</p>
-            <p className="t_benef"><strong>Benefícios da RainTech:</strong> </p>
-            <p className="p_benef"><strong>Economia e Sustentabilidade:</strong> Economiza e reduz o preço da sua conta. </p>
-            <p className="p_benef"><strong>Fácil Instalação:</strong> Design prático que se adapta em qualquer residência. </p>
-            <p className="obj">O objetivo que almejamos alcançar com o nosso produto é que o mesmo atinja toda população Brasileira, principalmente para aqueles que não tem condições financeiras, tratamos exclusivamente da água pluvial nesse produto com o intuito de reutilizar uma água já disponível para todos. Nosso diferencial é a utilização da tecnologia, a automatização para auxiliar na administração do produto em conjunto com um aplicativo.</p>
+            <div class="arrumarborda">
+              <p>Nosso produto é a solução para quem busca água limpa para utilizar em tarefas domiciliar. Nosso filtro de água de última geração utiliza tecnologia de ponta para remover impurezas e micro-organismos, garantindo água tratada.</p>
+              <p className="t_benef"><strong>Benefícios da RainTech:</strong> </p>
+              <p className="p_benef"><strong>Economia e Sustentabilidade:</strong> Economiza e reduz o preço da sua conta. </p>
+              <p className="p_benef"><strong>Fácil Instalação:</strong> Design prático que se adapta em qualquer residência. </p>
+              <p className="obj">O objetivo que almejamos alcançar com o nosso produto é que o mesmo atinja toda população Brasileira, principalmente para aqueles que não tem condições financeiras, tratamos exclusivamente da água pluvial nesse produto com o intuito de reutilizar uma água já disponível para todos. Nosso diferencial é a utilização da tecnologia, a automatização para auxiliar na administração do produto em conjunto com um aplicativo.</p>
+            </div>
           </div>
 
 
@@ -44,9 +47,10 @@ export function Home() {
 
           <div className="container_redes">
             <div className="redes_img">
-              <img src={iconInstagram} alt="" />
-              <img src={iconGithub} alt="f" />
-              <img src={iconTwitter} alt="f" />
+              <a href="https://www.instagram.com/_raintech/">
+              <img src={iconInstagram} alt="ícone do Instagram" /></a>
+              <a href="https://github.com/lilianjc837"><img src={iconGithub} alt="ícone do Github" /></a>
+              <a href="https://x.com/EcosyncEdutec?t=OQWviriYPTYZ_rkCLRXEfw&s=09"><img src={iconTwitter} alt="ícone do Twitter" /></a>
             </div>
             <p> Nos acompanhe nas <br /> redes sociais!</p>
           </div>
@@ -55,3 +59,6 @@ export function Home() {
     </HomeContainer>
   )
 }
+
+
+
